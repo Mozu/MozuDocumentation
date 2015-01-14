@@ -2,7 +2,7 @@
 Slate Theme for GitHub Pages
 by Jason Costello, @jsncostello
 *******************************************************************************/
-
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
 @import url(pygment_trac.css);
 
 /*******************************************************************************
@@ -136,16 +136,15 @@ strong {
 img {
   position: relative;
   margin: 0 auto;
-  max-width: 739px;
   padding: 5px;
   margin: 10px 0 10px 0;
-  border: 1px solid #ebebeb;
+  border: 0px solid #ebebeb;
 
-  box-shadow: 0 0 5px #ebebeb;
-  -webkit-box-shadow: 0 0 5px #ebebeb;
-  -moz-box-shadow: 0 0 5px #ebebeb;
-  -o-box-shadow: 0 0 5px #ebebeb;
-  -ms-box-shadow: 0 0 5px #ebebeb;
+  box-shadow: 0 0 0px #ebebeb;
+  -webkit-box-shadow: 0 0 0px #ebebeb;
+  -moz-box-shadow: 0 0 0px #ebebeb;
+  -o-box-shadow: 0 0 0px #ebebeb;
+  -ms-box-shadow: 0 0 0px #ebebeb;
 }
 
 p img {
@@ -201,14 +200,12 @@ ul, ol, dl {
 }
 
 ul {
-  list-style-position: inside;
-  list-style: disc;
+  list-style: inside;
   padding-left: 20px;
 }
 
 ol {
-  list-style-position: inside;
-  list-style: decimal;
+  list-style: decimal inside;
   padding-left: 20px;
 }
 
@@ -287,7 +284,7 @@ Full-Width Styles
 }
 
 #header_wrap {
-  background: #212121;
+  background: #df3018;
   background: -moz-linear-gradient(top, #373737, #212121);
   background: -webkit-linear-gradient(top, #373737, #212121);
   background: -ms-linear-gradient(top, #373737, #212121);
@@ -422,4 +419,44 @@ Small Device Styles
     font-size: 11px;
   }
 
+}
+
+.footer {
+	background-color: #2d2d2d;
+	color: #ffffff;
+	position: relative;
+	margin-top: -100px; /* negative value of footer height */
+	height: 115px;
+	clear: both;
+	padding-top: 30px;
+}
+
+.footer a {
+	color: #df3018;
+}
+
+.footer a:hover, .footer a:active {
+	color: #A62412;
+}
+
+.footer__logo {
+	margin-top: 5px;
+}
+
+.footer__icons {
+	margin-top: 10px;
+}
+
+.footer__icons .btn-primary {
+	margin-left: 5px;
+}
+
+.footer__icons .btn-primary {
+	background-color: transparent;
+	border: 0px;
+}
+
+.footer__icons .btn-primary:hover, .footer__icons .btn-primary:focus, .footer__icons .btn-primary:active, .footer__icons .btn-primary.active {
+	background-color: #871D0F;
+	border-color: #871D0F;
 }
