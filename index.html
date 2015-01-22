@@ -1,63 +1,184 @@
 <!DOCTYPE html>
 <html>
+    <head><title>Mozu Documentation</title>
+        <meta name="author" content="Mozu" />
+        <meta name="description" content="User documentation for Mozu" />
+        <meta name="keywords" content="Docs,Mozu" />
+		<link rel="shortcut icon" href="http://www.mozu.com/favicon.ico" />
+		
+		<!-- Required for Scrollspy -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/scrollspy.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/affix.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		
+		<!-- Mozu CSS developed by Mozu Docs -->
+		<link href="stylesheets/mozuland/mozu-bootswatch.css" rel="stylesheet" type="text/css" />	
+		
+		<!-- Scrollspy active link script -->
+		<script>
+		$( document ).ready(function() {
+		$('body').scrollspy({
+			target: '.bs-docs-sidebar',
+			offset: 20
+		});
+		});        
+		</script>
+		
+		<!-- Anchor Ease Script -->
+		<script>
+		 $(function() {
+			  $('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+			&& location.hostname == this.hostname) {
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Documentation : Documentation for Volusion and Mozu">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Mozu Documentation</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <img src="images/mozu-white.png">
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3><a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to the Mozu Documentation Site</h3>
-
-<p>This site provides further documentation including PDFs, online help, and content per request for Partners and Merchants. You can also visit our Learn content at the <a href="http://developer.mozu.com/learn">Mozu Dev Center</a>.</p>
-
-<h4>Release Notes</h4>
-<p>The latest release notes are found at the top of the list.</p>
-	<ul>
-	<li><a href="ReleaseNotes/MozuDecember2014ServiceUpdateReleaseNotes.pdf">Mozu Dec 2014 Service Update Release Notes</a></li>
-	<li><a href="ReleaseNotes/MozuQ42014ReleaseNotes.pdf">Mozu Q4 2014 Release Notes</a></li>
-	</ul>
-
-<h4>Getting Started</h4>
-	<ul>
-	<li><a href="GettingStarted/GettingStartedwithMozuAdminGeneralSettings.pdf">Getting Started with Mozu Admin General Settings</a> : Configure channels, locations, shipping, payment, checkout, tax, user, role, and app settings.</li>
-	<li><a href="GettingStarted/GettingStartedwithMozuCatalog.pdf">Getting Started with Mozu Catalog</a> : Create catalogs, product attributes, product types, categories, products, and more.</li>
-	<li><a href="GettingStarted/GettingStartedwithMozuSiteBuilder.pdf">Getting Started with Mozu Site Builder</a> : Create, configure, and manage your Mozu themes, widgets, pages, templates and more in Site Builder.</li>
-	</ul>
+				  var target = $(this.hash);
+				  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				  if (target.length) {
+					$('html,body').animate({
+					  scrollTop: target.offset().top - 75 //offsets for fixed header
+					}, 1000);
+					return false;
+				  }
+				}
+			  });
+			  //Executed on page load with URL containing an anchor tag.
+			  if($(location.href.split("#")[1])) {
+				  var target = $('#'+location.href.split("#")[1]);
+				  if (target.length) {
+					$('html,body').animate({
+					  scrollTop: target.offset().top - 75 //offset height of header here too.
+					}, 1000);
+					return false;
+				  }
+				}
+		});
+		</script>
+		
+		<!-- Affix Javascript -->
+		
+		<script>$(function(){
+ 
+			var stickyElement = '.bs-docs-sidebar', 
+			bottomElement = '.footer'; 
+			
+			if($( stickyElement ).length){
+			$( stickyElement ).each(function(){
+		   
+			var fromTop = $( this ).offset().top,
+		   
+			fromBottom = $( document ).height()-($( this ).offset().top + $( this ).outerHeight()),
+			
+			stopOn = $( document ).height()-( $( bottomElement ).offset().top)+($( this ).outerHeight() - $( this ).height());
+			
+			if( (fromBottom-stopOn) > 200 ){
+			
+			$( this ).css('width', $( this ).width()).css('top', 0).css('position', '');
+			
+			$( this ).affix({
+			offset: {
+			
+			top: fromTop,
+			
+			bottom: stopOn
+			}
+			
+			}).on('affix.bs.affix', function(){ $( this ).css('top', 0).css('position', ''); });
+			}
+			
+			$( window ).trigger('scroll');
+			});
+			}
+		});
+		</script>
+	</head>
+    <body>
+	<div id="main">
+	<div class="container">
+		<!-- Top Nav - Mozu -->
+			<nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button> <a href="#"><img src="images/logo-m-red-medium.png" style="margin-top:3px;"/></a></div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+							<li><a href="http://developer.mozu.com/learn"><span>Mozu Dev Center</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+			
+		<!--Side Navigation TOC -->
+		<div class="row">
+		<div class="landing-title">
+			<h1>Mozu Documentation</h1>	
+		</div>
+			<div class="col-md-3" >
+				<nav class="bs-docs-sidebar" >
+					<ul class="nav nav-stacked" >
+						<div class="side-heading">Table of Contents</div>
+							<li><a href="#releaseNotes">Release Notes</a></li>
+							<li><a href="#gettingstarted">Getting Started</a></li>
+							<li><a href="#appdocs">App Documentation</a></li>
+					</ul>
+				</nav>
+			</div>
+                    
+            <div class="col-md-9 content" >
+                <!-- Documentation content -->
+				<section id="intro">
+					<p>This site provides further documentation including PDFs, online help, and content per request for Partners and Merchants. You can also visit our Learn content at the <a href="http://developer.mozu.com/learn">Mozu Dev Center</a>.</p>
+				</section>
+				<section id="releasenotes">
+					<h2>Release Notes</h2>
+					<p>The latest release notes are found at the top of the list.</p>
+						<ul>
+						<li><a href="ReleaseNotes/MozuDecember2014ServiceUpdateReleaseNotes.pdf">Mozu Dec 2014 Service Update Release Notes</a></li>
+						<li><a href="ReleaseNotes/MozuQ42014ReleaseNotes.pdf">Mozu Q4 2014 Release Notes</a></li>
+						</ul>
+				</section>
+				<section id="gettingstarted">				
+                        <h2>Getting Started</h2>
+						<ul>
+						<li><a href="GettingStarted/GettingStartedwithMozuAdminGeneralSettings.pdf">Getting Started with Mozu Admin General Settings</a> : Configure channels, locations, shipping, payment, checkout, tax, user, role, and app settings.</li>
+						<li><a href="GettingStarted/GettingStartedwithMozuCatalog.pdf">Getting Started with Mozu Catalog</a> : Create catalogs, product attributes, product types, categories, products, and more.</li>
+						<li><a href="GettingStarted/GettingStartedwithMozuSiteBuilder.pdf">Getting Started with Mozu Site Builder</a> : Create, configure, and manage your Mozu themes, widgets, pages, templates and more in Site Builder.</li>
+						</ul>
+						
+				</section>
+				<section id="appdocs">
+                        <h2>App Documention</h2>
+						<ul>
+						<li><a href="http://mozu.github.io/IntegrationDocuments/">Mozu App Documentation</a> : Repository of online help and PDF content for Mozu apps.</li>
+						<li><a href="http://mozu.github.io/IntegrationDocuments/Mozu-App-Certification-Guide.pdf">Mozu App Certification Guide</a>
+						</ul>
+				</section>
+						</div>
+                    </div>
+                </div>
+           </div>
+		</div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer__logo">
+                            <a href="http://www.mozu.com" target="_blank"><img src="http://www.mozu.com/sites/all/themes/mozu_aurora/logo.png" style="padding-top:7px;"/></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        
+                    </div>
+                    <div class="col-md-3">
+                        <p class="pull-right footer__icons" style="padding-right:40px;"><a href="http://www.mozu.com/ecommerce-app-center" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-code-fork"></i></button></a><a href="http://www.mozu.com/contact"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-comments-o"></i></button></a><a href="http://www.mozu.com/contact"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-copyright"></i></button></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+		
 	
-<h4>App Documention</h4>
-	<ul>
-	<li><a href="http://mozu.github.io/IntegrationDocuments/">Mozu App Documentation</a> : Repository of online help and PDF content for Mozu apps.</li>
-	<li><a href="http://mozu.github.io/IntegrationDocuments/Mozu-App-Certification-Guide.pdf">Mozu App Certification Guide</a>
-	</ul>
-
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner footer__icons">
-        <p class="copyright">Documentation maintained by <a href="https://github.com/mozu">Mozu</a> | <a href="http://www.mozu.com/contact"><button type="button" class="btn btn-primary btn-lg" style="color:#ffffff;"><i class="fa fa-comments-o"></i></button></a><a href="http://www.mozu.com/legal"><button type="button" class="btn btn-primary btn-lg" style="color:#ffffff;"><i class="fa fa-copyright"></i></button></a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+    </body>
 </html>
