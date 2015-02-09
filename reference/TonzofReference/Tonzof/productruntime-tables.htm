@@ -1,0 +1,2727 @@
+<!DOCTYPE html>
+<html data-mc-runtime-file-type="Topic" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <!-- Dev Center Masterpage - multiple page sidebar, topic via proxy, footer across all -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Mozu" />
+        <meta name="description" content="Dev Center online help documentation." />
+        <meta name="keywords" content="Mozu, Dev Center, developer, help" />
+        <link rel="shortcut icon" href="http://developer.mozu.com/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" /><title>
+		Mozu.ProductRuntime.Contracts.AppliedDiscount
+	</title>
+        <!-- Mozu CSS -->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries. Again, you should technically remove "http:"; however, doing so increases Flare's build time on the oder of HOURS. -->
+        <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+		<![endif]-->
+        <!-- Insert Google Analytics Here -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/mozu-bootswatch-api.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="main">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button><a class="navbar-brand" href="index.htm"> <img src="../Resources/MasterPages/BootstrapSource/icon_mozu_red_m.png" style="margin-top: -9px;" /></a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                    <div class="navbar-collapse collapse">
+                        <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li value="1"><a href="http://developer.mozu.com/">Dev Center</a>
+                            </li>
+                            <li value="2"><a href="http://developer.mozu.com/api">Mozu API</a>
+                            </li>
+                            <li value="3"><a href="http://developer.mozu.com/learn">Mozu Learn</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!-- <div class="divide-nav" role="navigation">
+                <div class="container"> <MadCap:breadcrumbsProxy /> </div>
+            </div> -->
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3" style="margin-top: 60px;">
+                        <nav class="bs-docs-sidebar">
+                            <!--Side Bar Multipage -->
+                            <ul class="nav nav-stacked">
+                                <div class="side-heading">List of Mozu Tables</div>
+                                <li value="2"><a href="adminuser-tables.htm">AdminUser Tables</a>
+                                </li>
+                                <li value="3"><a href="appdev-tables.htm">AppDev Tables</a>
+                                </li>
+                                <li value="4"><a href="commerceruntime-tables.htm">CommerceRuntime Tables</a>
+                                </li>
+                                <li value="5"><a href="content-tables.htm">Content Tables</a>
+                                </li>
+                                <li value="6"><a href="core-api-tables.htm">Core API Tables</a>
+                                </li>
+                                <li value="7"><a href="extensible-tables.htm">Core Extensible Tables</a>
+                                </li>
+                                <li value="8"><a href="thirdparty-tables.htm">Core ThirdParty Tables</a>
+                                </li>
+                                <li value="9"><a href="customer-tables.htm">Customer Tables</a>
+                                </li>
+                                <li value="10"><a href="event-tables.htm">Event Tables</a>
+                                </li>
+                                <li value="11"><a href="installedapps-tables.htm">InstalledApplications Tables</a>
+                                </li>
+                                <li value="12"><a href="location-tables.htm">Location Tables</a>
+                                </li>
+                                <li value="13"><a href="paymentsvc-tables.htm">PaymentService Tables</a>
+                                </li>
+                                <li value="14"><a href="pricingruntime-tables.htm">PricingRuntime Tables</a>
+                                </li>
+                                <li value="15"><a href="productadmin-tables.htm">ProductAdmin Tables</a>
+                                </li>
+                                <li value="16"><a href="#">ProductRuntime Tables</a>
+                                </li>
+                                <li value="17"><a href="reference-tables.htm">Reference Tables</a>
+                                </li>
+                                <li value="18"><a href="shippingruntime-tables.htm">ShippingRuntime Tables</a>
+                                </li>
+                                <li value="19"><a href="sitesettings-general-tables.htm">SiteSettings General Tables</a>
+                                </li>
+                                <li value="20"><a href="sitesettings-order-tables.htm">SiteSettings Order Tables</a>
+                                </li>
+                                <li value="21"><a href="sitesettings-shipping-tables.htm">SiteSettings Shipping Tables</a>
+                                </li>
+                                <li value="22"><a href="../../Tonzof/tenants-tables.htm">Tenants Shipping Tables</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-9 content">
+                        <!-- Flare topic compiler -->
+                        <h1>
+		Mozu.ProductRuntime.Contracts.AppliedDiscount
+	</h1>
+                        <p>Properties for the applied discount for a product.</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>couponCode</td>
+                                    <td>No</td>
+                                    <td>The code for the coupon associated with the discount.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>discount</td>
+                                    <td>No</td>
+                                    <td>Properties of the discount currently applied to the product.</td>
+                                    <td>Discount</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>impact</td>
+                                    <td>No</td>
+                                    <td>The value of the discount applied to the product, represented as a negative currency amount to apply to the original price.</td>
+                                    <td>decimal</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.AttributeDetail
+	</h1>
+                        <p>
+		The product attribute details common between all attribute types - properties, options, and extras.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>dataType</td>
+                                    <td>No</td>
+                                    <td>The data type (such as datetime or string) associated with the attribute.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>dataTypeSequence</td>
+                                    <td>No</td>
+                                    <td>Unique sequence of the attribute for its data type.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>description</td>
+                                    <td>No</td>
+                                    <td>Description of the attribute in the language specified by the locale code.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>displayIntention</td>
+                                    <td>No</td>
+                                    <td>Details the intended display of the product in the storefront.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>inputType</td>
+                                    <td>No</td>
+                                    <td>The input type (such as date or text area) accepted for the attribute's data type.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>Name of the attribute in the language specified by the locale code.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>searchableInStorefront</td>
+                                    <td>No</td>
+                                    <td>Indicates whether the attribute value is searchable in the storefront by a shopper.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>searchDisplayValue</td>
+                                    <td>No</td>
+                                    <td>If true, the system indexes the display value of string attributes instead of the canonical value for searching. The canonical value is always used for filtering. This does not apply for for non-string attributes.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>usageType</td>
+                                    <td>No</td>
+                                    <td>The usage type of the product attribute, which is property, option, or extra.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>validation</td>
+                                    <td>No</td>
+                                    <td>Validation rules of an attribute that determine which values are valid for ShopperEntered and AdminEntered ValueTypes.</td>
+                                    <td>AttributeValidation</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>valueType</td>
+                                    <td>No</td>
+                                    <td>The type of value for the attribute, which is either ShopperEntered, AdminEntered, or Predefined.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.AttributeValidation
+	</h1>
+                        <p>
+		Validates the attribute configured for the product in the storefront against the attribute configured in product admin.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>maxDateValue</td>
+                                    <td>Yes</td>
+                                    <td>System-supplied and read-only.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>maxNumericValue</td>
+                                    <td>Yes</td>
+                                    <td>The maximum number of characters for the numeric length.</td>
+                                    <td>double</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>maxStringLength</td>
+                                    <td>Yes</td>
+                                    <td>The maximum number of characters for the string length.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>minDateValue</td>
+                                    <td>Yes</td>
+                                    <td>System-supplied and read-only.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>minNumericValue</td>
+                                    <td>Yes</td>
+                                    <td>The minimum number of characters for the numeric length.</td>
+                                    <td>double</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>minStringLength</td>
+                                    <td>Yes</td>
+                                    <td>The minimum character length of the string.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>regularExpression</td>
+                                    <td>No</td>
+                                    <td>Regular expression used to process attribute values that require special formatting such as phone numbers.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.AttributeVocabularyValueDisplayInfo
+	</h1>
+                        <p>Runtime display data for individual vocabulary values for an attribute. For example, a "color" attribute might have the following vocabulary values: Red, Blue, Green.
+</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cmsId</td>
+                                    <td>No</td>
+                                    <td>ID for the content management system, for the specific item to display on the storefron.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>colorValue</td>
+                                    <td>No</td>
+                                    <td>The color value for the display, such as red or blue.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>imageUrl</td>
+                                    <td>No</td>
+                                    <td>The URL link of the image to display for the item.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.BundledProduct
+	</h1>
+                        <p>
+		Properties of a component product in a product bundle. A product bundle can represent either a collection of multiple products sold as a single entity, or a collection of the same product sold as a package. For example, a 10-pack of socks.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>content</td>
+                                    <td>No</td>
+                                    <td>Localizable product content defined for the product bundle. System-supplied and read only.</td>
+                                    <td>ProductContent</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>creditValue</td>
+                                    <td>Yes</td>
+                                    <td>When the goodsType is DigitalCredit this value is populated to indicate the value of the credit. This is used to create store credit in the fulfillment of gift cards.</td>
+                                    <td>decimal</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>goodsType</td>
+                                    <td>No</td>
+                                    <td>This is the goods type of the product. Possible values are “Physical,” and “DigitalCredit”. This comes from the productType of the product. Products are defaulted to a Physical goodsType. Gift cards have a goodsType of DigitalCredit.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>inventoryInfo</td>
+                                    <td>No</td>
+                                    <td>This contains the inventory information about bundled products. If it manages stock, it specifies what the out of stock behavior is.</td>
+                                    <td>ProductInventoryInfo</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isPackagedStandAlone</td>
+                                    <td>Yes</td>
+                                    <td>If true, the component product of the bundle should not ship in a package with the rest of the product bundle, and should ship in a package by itself. System-supplied and read only.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>measurements</td>
+                                    <td>No</td>
+                                    <td>The measurements in height, length, weight and width for a product.</td>
+                                    <td>PackageMeasurements</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>optionAttributeFQN</td>
+                                    <td>No</td>
+                                    <td>BundledProducts result from a static bundle or are dynamically added as a result of the shopper selecting products as extras. When the bundled item is dynamic, it includes the attribute's fully qualified name of the extra that it came from. When optionAttributeFQN is null, the bundled item was statically defined, when not null, the item came from an extra selection.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>optionValue</td>
+                                    <td>No</td>
+                                    <td>Properties of a value associated with a product option attribute.</td>
+                                    <td>object</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>productCode</td>
+                                    <td>No</td>
+                                    <td>Unique product code.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>productType</td>
+                                    <td>No</td>
+                                    <td>The product type.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>quantity</td>
+                                    <td>No</td>
+                                    <td>The quantity of the component product in the product bundle. System-supplied and read only.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.BundledProductSummary
+	</h1>
+                        <p>
+		System-supplied and read only information for component products in a product bundle.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>creditValue</td>
+                                    <td>Yes</td>
+                                    <td>When the goodsType is DigitalCredit this value is populated to indicate the value of the credit. This is used to create store credit in the fulfillment of gift cards.</td>
+                                    <td>decimal</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>goodsType</td>
+                                    <td>No</td>
+                                    <td>This is the goods type of the product. Possible values are “Physical,” and “DigitalCredit”. This comes from the productType of the product. Products are defaulted to a Physical goodsType. Gift cards have a goodsType of DigitalCredit.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>inventoryInfo</td>
+                                    <td>No</td>
+                                    <td>This contains the inventory information about bundled products. If it manages stock, it specifies what the out of stock behavior is.</td>
+                                    <td>ProductInventoryInfo</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isPackagedStandAlone</td>
+                                    <td>Yes</td>
+                                    <td>If true, the component product of the bundle should not ship in a package with the rest of the product bundle, and should ship in a package by itself. System-supplied and read only.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>measurements</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The measurements in height, length, weight and width for a product.</p>
+                                    </td>
+                                    <td>PackageMeasurements</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>optionAttributeFQN</td>
+                                    <td>No</td>
+                                    <td>BundledProducts result from a static bundle or are dynamically added as a result of the shopper selecting products as extras. When the bundled item is dynamic, it includes the attribute's fully qualified name of the extra that it came from. When optionAttributeFQN is null, the bundled item was statically defined, when not null, the item came from an extra selection.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>optionValue</td>
+                                    <td>No</td>
+                                    <td>Properties of a value associated with a product option attribute.</td>
+                                    <td>object</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>productCode</td>
+                                    <td>No</td>
+                                    <td>The unique product code.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>productName</td>
+                                    <td>No</td>
+                                    <td>The read-only name of the component in the bundled product.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>productShortDescription</td>
+                                    <td>No</td>
+                                    <td>The short description defined for the component in a bundled product. System-supplied and read only.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>productType</td>
+                                    <td>No</td>
+                                    <td>The product type.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>quantity</td>
+                                    <td>No</td>
+                                    <td>The quantity of a component product in its product bundle.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.Category
+	</h1>
+                        <p>
+		Properties of the product category that appears on the storefront.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>categoryId</td>
+                                    <td>No</td>
+                                    <td>Unique identifier of the product category.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>childrenCategories</td>
+                                    <td>No</td>
+                                    <td>List of the subcategories in the hierarchy for the specified categories.</td>
+                                    <td>Category</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>content</td>
+                                    <td>No</td>
+                                    <td>The content for the product category.</td>
+                                    <td>CategoryContent</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isDisplayed</td>
+                                    <td>No</td>
+                                    <td>If true, the category is displayed on the website storefront.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>parentCategory</td>
+                                    <td>No</td>
+                                    <td>If applicable, the parent category in the hierarchy for the specified category.</td>
+                                    <td>Category</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>sequence</td>
+                                    <td>Yes</td>
+                                    <td>The numeric value that denotes the place this entity occupies in the order of the entity list.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.CategoryCollection
+	</h1>
+                        <p>
+		The container for a non-paged list of related site-specific product category properties.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>Collection of product categories, returned in an array of items.</td>
+                                    <td>Category</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>Calculated total count of returned category items.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.CategoryContent
+	</h1>
+                        <p>
+		Localized page content for a product category.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>categoryImages</td>
+                                    <td>No</td>
+                                    <td>Array list of image media associated with the product category.</td>
+                                    <td>CategoryImage</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>description</td>
+                                    <td>No</td>
+                                    <td>The localized description of the category to display on a storefront.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>metaTagDescription</td>
+                                    <td>No</td>
+                                    <td>Defined description of the metadata used to manage product information internally, such as search engine optimization.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>metaTagKeywords</td>
+                                    <td>No</td>
+                                    <td>Defined keywords of the metadata used to manage product information internally, such as search engine optimization.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>metaTagTitle</td>
+                                    <td>No</td>
+                                    <td>Defined title of the metadata used to manage product information internally, such as search engine optimization.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>Name of the product category.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageTitle</td>
+                                    <td>No</td>
+                                    <td>Title that appears on the top of new pages associated with the product category on the storefront.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>slug</td>
+                                    <td>No</td>
+                                    <td>Human-readable identifier to associated with a product category to create friendly URLs.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.CategoryImage
+	</h1>
+                        <p>
+		Properties of an image or other media file associated with a product category.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>altText</td>
+                                    <td>No</td>
+                                    <td>Descriptive text associated with the image or video that appears on the web storefront.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>cmsId</td>
+                                    <td>No</td>
+                                    <td>The identifier of the category image in the Mozu CMS. Supply a value for either the CMS ID or Image URL parameter.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>imageLabel</td>
+                                    <td>No</td>
+                                    <td>Image title that appears on the web storefront, set to the language specified by the site's LocaleCode.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>imageUrl</td>
+                                    <td>No</td>
+                                    <td>URL of the product category image.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>mediaType</td>
+                                    <td>No</td>
+                                    <td>Type of media specification required to successfully render the image, video, or other category content.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>sequence</td>
+                                    <td>Yes</td>
+                                    <td>Integer that represents the sequential order of the category image in the collection.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>videoUrl</td>
+                                    <td>No</td>
+                                    <td>The link or URL of the product category video. The file path name is set in the language specified by the LocaleCode.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.ProductRuntime.Contracts.CategoryPagedCollection
+	</h1>
+                        <p>
+		Paged collection of categories and related properties.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>Paged collection of product categories, returned as an array of items.</td>
+                                    <td>Category</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the maximum amount of pages to return. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the amount of items per page. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the page to start for the paged retrieved JSON. The default starts at 0. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.ProductRuntime.Contracts.ConfiguredProduct
+	</h1>
+                        <p>
+		Properties of a product configuration with shopper-selected options.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>availableShippingDiscounts</td>
+                                    <td>No</td>
+                                    <td>List of shipping discounts that can be applied to the configured product.</td>
+                                    <td>Discount</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>fulfillmentTypesSupported</td>
+                                    <td>No</td>
+                                    <td>The list of fulfillment types the product supports.</td>
+                                    <td>string</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>inventoryInfo</td>
+                                    <td>No</td>
+                                    <td>Properties of the inventory of the configured product, including the number of items in stock, whether the item appears on the storefront, and whether the item is out of stock or can be back ordered.</td>
+                                    <td>ProductInventoryInfo</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>measurements</td>
+                                    <td>No</td>
+                                    <td>The measurements in height, length, weight and width for a product.</td>
+                                    <td>PackageMeasurements</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>mfgPartNumber</td>
+                                    <td>No</td>
+                                    <td>The manufacturer part number supplied for the product.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>options</td>
+                                    <td>No</td>
+                                    <td>The list of options set up in product admin.</td>
+                                    <td>ProductOption</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>price</td>
+                                    <td>No</td>
+                                    <td>Unit price that the tenant intends to sell the product if no sale price is set.</td>
+                                    <td>ProductPrice</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>priceRange</td>
+                                    <td>No</td>
+                                    <td>For products with options that vary the cost of the product, the range between lowest and highest possible price of the product based on the current selection of options.</td>
+                                    <td>ProductPriceRange</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>productCode</td>
+                                    <td>No</td>
+                                    <td>The unique produce code.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>purchasableState</td>
+                                    <td>No</td>
+                                    <td>The current state of the configured product determines whether or not the product is eligible for purchase. Products with options are only purchasable if the shopper has selected all required options. If the product is not ready for purchase, a message lists missing options that are required.</td>
+                                    <td>ProductPurchasableState</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>upc</td>
+                                    <td>No</td>
+                                    <td>The universal product code defined for the product.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>variationProductCode</td>
+                                    <td>No</td>
+                                    <td>Merchant-created code associated with a specific product variation. Variation product codes maintain an association with the base product code.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.Discount
+	</h1>
+                        <p>
+		Properties of a defined product, order, or shipping discount.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>discountId</td>
+                                    <td>No</td>
+                                    <td>Unique identifier of the discount. System-supplied and read only.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>expirationDate</td>
+                                    <td>Yes</td>
+                                    <td>The date and time the discount can no longer be redeemed. Date in UTC Date/Time. System-supplied and read only.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>friendlyDescription</td>
+                                    <td>No</td>
+                                    <td>Client-defined description that displays for the shopper on the web storefront.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>The localizable name assigned for the product discount.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.DiscountSelections
+	</h1>
+                        <p>
+		The discounts to evaluate for a specified product code at the time of purchase.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>discountIds</td>
+                                    <td>No</td>
+                                    <td>List of discount IDs to evaluate for a product code.</td>
+                                    <td>int</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.DiscountValidationSummary
+	</h1>
+                        <p>
+		List of discounts the shopper can redeem for a product in its current state.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>applicableDiscounts</td>
+                                    <td>No</td>
+                                    <td>List of discount IDs the shopper can redeem for a product in its current state.</td>
+                                    <td>Discount</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.Facet
+	</h1>
+                        <p>
+		Properties of the facet used to index product searches on a storefront.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>facetType</td>
+                                    <td>No</td>
+                                    <td>The type of facet. Valid values are "range," which enables creation of a range of values, or "value," which populates the facet values based on the associated attribute or category.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>field</td>
+                                    <td>No</td>
+                                    <td>The field name associated with the facet.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>label</td>
+                                    <td>No</td>
+                                    <td>The descriptive label for the facet.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>values</td>
+                                    <td>No</td>
+                                    <td>The values associated with the facet.</td>
+                                    <td>FacetValue</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.FacetValue
+	</h1>
+                        <p>
+		The value selected for a facet when indexing a product search.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>childrenFacetValues</td>
+                                    <td>No</td>
+                                    <td>If applicable, the values of any subcategory facets in a hierarchy. Hierarchical facets only apply for product categories.</td>
+                                    <td>FacetValue</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>count</td>
+                                    <td>No</td>
+                                    <td>The number of facet value selections in a product search result set.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>filterValue</td>
+                                    <td>No</td>
+                                    <td>Submits the selected facet value as a facet value filter.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isApplied</td>
+                                    <td>Yes</td>
+                                    <td>If true, the facet value is applied as a filter in the storefront product search.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>label</td>
+                                    <td>No</td>
+                                    <td>The descriptive label of the facet value.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>parentFacetValue</td>
+                                    <td>No</td>
+                                    <td>If applicable, the values of any parent category facets in a hierarchy. Hierarchical facets only apply for product categories.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>rangeQueryValueEnd</td>
+                                    <td>No</td>
+                                    <td>The maximum value selected or entered for the facet range query.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>rangeQueryValueStart</td>
+                                    <td>No</td>
+                                    <td>The minimum value selected or entered for the facet range query.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>value</td>
+                                    <td>No</td>
+                                    <td>String representation of the facet value selected for the product search.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.LocationInventory
+	</h1>
+                        <p>
+		Properties of the active product inventory levels for a specific location.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>locationCode</td>
+                                    <td>No</td>
+                                    <td>User-defined code that uniquely identifies the location.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>productCode</td>
+                                    <td>No</td>
+                                    <td>The unique product code.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>stockAvailable</td>
+                                    <td>Yes</td>
+                                    <td>The current level of active product stock available at the specified location.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.LocationInventoryCollection
+	</h1>
+                        <p>
+		Paged collection of product inventory information by location.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>Collection of product location inventory objects, returned as an array of items.</td>
+                                    <td>LocationInventory</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>The calculated total count of returned items.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.LocationInventoryQuery
+	</h1>
+                        <p>Properties for the product location inventory provided for queries to locate products by their location.</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>locationCodes</td>
+                                    <td>No</td>
+                                    <td>Location codes for the physical location of the products.</td>
+                                    <td>string</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>productCodes</td>
+                                    <td>No</td>
+                                    <td>The unique product code.</td>
+                                    <td>string</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.PackageMeasurements
+	</h1>
+                        <p>The measurements for a product including the height, length, weight and width.</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>packageHeight</td>
+                                    <td>No</td>
+                                    <td>Height of the package in imperial units of feet and inches.</td>
+                                    <td>Measurement</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>packageLength</td>
+                                    <td>No</td>
+                                    <td>Length of the package in imperial units of feet and inches.</td>
+                                    <td>Measurement</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>packageWeight</td>
+                                    <td>No</td>
+                                    <td>Weight of the package in imperial units of pounds and ounces.</td>
+                                    <td>Measurement</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>packageWidth</td>
+                                    <td>No</td>
+                                    <td>Width of the package in imperial units of feet and inches.</td>
+                                    <td>Measurement</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.Product
+	</h1>
+                        <p>
+		Properties of the product that appears on a designated storefront.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>availableShippingDiscounts</td>
+                                    <td>No</td>
+                                    <td>List of shipping discounts that can be applied to the product.</td>
+                                    <td>Discount</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>bundledProducts</td>
+                                    <td>No</td>
+                                    <td>Properties of a collection of component products that make up a single product bundle with its own product code.</td>
+                                    <td>BundledProduct</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>categories</td>
+                                    <td>No</td>
+                                    <td>List of categories associated with the product.</td>
+                                    <td>Category</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>content</td>
+                                    <td>No</td>
+                                    <td>The content for the runtime product.</td>
+                                    <td>ProductContent</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>createDate</td>
+                                    <td>No</td>
+                                    <td>The date and time the runtime product was created.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>fulfillmentTypesSupported</td>
+                                    <td>No</td>
+                                    <td>The list of fulfillment types the product supports.</td>
+                                    <td>string</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>goodsType</td>
+                                    <td>No</td>
+                                    <td>This is the goods type of the product. Possible values are “Physical,” and “DigitalCredit”. This comes from the productType of the product. Products are defaulted to a Physical goodsType. Gift cards have a goodsType of DigitalCredit.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>inventoryInfo</td>
+                                    <td>No</td>
+                                    <td>Array of active inventory level information associated with the product.</td>
+                                    <td>ProductInventoryInfo</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isActive</td>
+                                    <td>Yes</td>
+                                    <td>If true, the product is marked as available for sale. Setting a product to IsActive = false will prevent it from being shown on the customer facing storefront.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isPackagedStandAlone</td>
+                                    <td>Yes</td>
+                                    <td>If true, this product cannot ship in a package with other products and must ship in a package by itself.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isRecurring</td>
+                                    <td>No</td>
+                                    <td>If true, the product can be purchased or fulfilled at regular intervals such as a monthly billing cycle or a digital or physical subscription.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isTaxable</td>
+                                    <td>No</td>
+                                    <td>If true, the entity is subject to tax based on the relevant tax rate.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>measurements</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The measurements in height, length, weight and width for a product.</p>
+                                    </td>
+                                    <td>PackageMeasurements</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>mfgPartNumber</td>
+                                    <td>No</td>
+                                    <td>The manufacturer part number defined for the product.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>mfgPartNumbers</td>
+                                    <td>No</td>
+                                    <td>The list of manufacturer part numbers defined for the product.</td>
+                                    <td>string</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>options</td>
+                                    <td>No</td>
+                                    <td>The list of options set up in product admin.</td>
+                                    <td>ProductOption</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>price</td>
+                                    <td>No</td>
+                                    <td>Unit price that the tenant intends to sell the product if no sale price is set.</td>
+                                    <td>ProductPrice</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>priceRange</td>
+                                    <td>No</td>
+                                    <td>For products with options that vary the cost of the product, the range between lowest and highest possible price of the product based on the current selection of options.</td>
+                                    <td>ProductPriceRange</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pricingBehavior</td>
+                                    <td>No</td>
+                                    <td>Describes the behavior the system uses when determining the price of the product.</td>
+                                    <td>ProductPricingBehaviorInfo</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>productCode</td>
+                                    <td>No</td>
+                                    <td>The unique product code.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>productSequence</td>
+                                    <td>Yes</td>
+                                    <td>Integer that represents the sequential order of the product.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>productType</td>
+                                    <td>No</td>
+                                    <td>A product type is like a product template that can be reused.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>productUsage</td>
+                                    <td>No</td>
+                                    <td>The usage type that applies to this product, which is Standard (a single product without configurable options), Configurable (a product that includes configurable option attributes), Bundle (a collection of products sold as a single entity), or Component (an invididual product that represents a component in a bundle).</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>properties</td>
+                                    <td>No</td>
+                                    <td>The list of product property attributes defined for the product.</td>
+                                    <td>ProductProperty</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>publishState</td>
+                                    <td>No</td>
+                                    <td>The publishing state of the product definition in the master catalog, which is "New", "Draft", or "Live".</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>purchasableState</td>
+                                    <td>No</td>
+                                    <td>The current state of the configured product determines whether or not the product is eligible for purchase. Products with options are only purchasable if the shopper has selected all required options. If the product is not ready for purchase, a message lists missing options that are required.</td>
+                                    <td>ProductPurchasableState</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>upc</td>
+                                    <td>No</td>
+                                    <td>The universal product code associated with the product. The UPC of a product is unique across all sales channels.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>upCs</td>
+                                    <td>No</td>
+                                    <td>The list of universal product codes defined for the product.</td>
+                                    <td>string</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>variationProductCode</td>
+                                    <td>No</td>
+                                    <td>Product code that represents the product variation selected based on the option values the shopper entered.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.ProductRuntime.Contracts.ProductCollection
+	</h1>
+                        <p>
+		Collection of products and their related properties.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Paged collection of runtime products. When requesting all contract content document types, the item array includes JSON for all matching documents.</p>
+                                    </td>
+                                    <td>Product</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the maximum amount of pages to return. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the amount of items per page. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the page to start for the paged retrieved JSON. The default starts at 0. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.ProductContent
+	</h1>
+                        <p>
+		Content associated with a product definition that can be localized.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>metaTagDescription</td>
+                                    <td>No</td>
+                                    <td>Description defined for the metadata used to internally manage information about the product.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>metaTagKeywords</td>
+                                    <td>No</td>
+                                    <td>Keywords defined for the metadata used to internally manage information about the product.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>metaTagTitle</td>
+                                    <td>No</td>
+                                    <td>Title defined for the metadata used to internally manage information about the product.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>productFullDescription</td>
+                                    <td>No</td>
+                                    <td>Full description of the product, which typically appears on the product details page.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>productImages</td>
+                                    <td>No</td>
+                                    <td>List of image files associated with the product.</td>
+                                    <td>ProductImage</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>productName</td>
+                                    <td>No</td>
+                                    <td>The descriptive brief product name.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>productShortDescription</td>
+                                    <td>No</td>
+                                    <td>Brief description of the product typically used when the product is displayed in a list or in search results.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>seoFriendlyUrl</td>
+                                    <td>No</td>
+                                    <td>Product URL defined for search engine optimization.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.ProductImage
+	</h1>
+                        <p>
+		Properties of an image defined for a product.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>altText</td>
+                                    <td>No</td>
+                                    <td>Descriptive text associated with the image or video that appears on the storefront.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>cmsId</td>
+                                    <td>No</td>
+                                    <td>The identifier of the product image in the Mozu CMS. Supply a value for either the CMS ID or the Image URL parameter.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>imageLabel</td>
+                                    <td>No</td>
+                                    <td>Image title that appears on the storefront.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>imageUrl</td>
+                                    <td>No</td>
+                                    <td>URL of the product image.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>mediaType</td>
+                                    <td>No</td>
+                                    <td>Type of media specification required to successfully render the product image, video, or other content.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>sequence</td>
+                                    <td>Yes</td>
+                                    <td>The numeric value that denotes the place this entity occupies in the order of the entity list.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>videoUrl</td>
+                                    <td>No</td>
+                                    <td>The file link or URL of the product video.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.ProductInventoryInfo
+	</h1>
+                        <p>
+		Properties of the active inventory managed for the product.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>manageStock</td>
+                                    <td>Yes</td>
+                                    <td>If true, Mozu manages inventoried stock levels for this product.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>onlineLocationCode</td>
+                                    <td>No</td>
+                                    <td>The location code for the direct ship location associated with the available online stock.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>onlineStockAvailable</td>
+                                    <td>Yes</td>
+                                    <td>The current number of products that are available for purchase.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>outOfStockBehavior</td>
+                                    <td>No</td>
+                                    <td>Determines the method this product uses when active stock is depleted. Options are "DisplayMessage" to display an out of stock message to the shopper, "HideProduct" to disable the product on the storefront, or "AllowBackOrder" to allow the shopper to back order the product. This property is required only if Mozu manages inventory for this product.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.ProductOptionSelection
+	</h1>
+                        <p>
+		The selection the shopper made from a list of options set up in product admin.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>attributeFQN</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The fully qualified name of the attribute, which is a user defined attribute identifier.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>attributeValueId</td>
+                                    <td>Yes</td>
+                                    <td>Identifier of the value of this attribute.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>shopperEnteredValue</td>
+                                    <td>No</td>
+                                    <td>The custom value the shopper entered for an option set up in product admin.</td>
+                                    <td>object</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>value</td>
+                                    <td>No</td>
+                                    <td>The attribute value.</td>
+                                    <td>object</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.ProductOptionSelections
+	</h1>
+                        <p>
+		For a product with shopper-configurable options, the properties of the product options selected by the shopper.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>options</td>
+                                    <td>No</td>
+                                    <td>List of option attributes associated with the product and the associated values currently defined for this product configuration.</td>
+                                    <td>ProductOptionSelection</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>variationProductCode</td>
+                                    <td>No</td>
+                                    <td>Product code that represents the product variation selected based on the option values the shopper entered.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.ProductOptionValue
+	</h1>
+                        <p>
+		Represents the values that are the product option selections for a shopper to choose when ordering a product.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>attributeValueId</td>
+                                    <td>No</td>
+                                    <td>Unique identifier of the product attribute value.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>bundledProduct</td>
+                                    <td>No</td>
+                                    <td>A collection of products that are sold as a bundle together.</td>
+                                    <td>BundledProduct</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>deltaPrice</td>
+                                    <td>Yes</td>
+                                    <td>The difference between the highest price and the lowest price.</td>
+                                    <td>decimal</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>deltaWeight</td>
+                                    <td>Yes</td>
+                                    <td>The difference between the highest weight and the lowest weight.</td>
+                                    <td>decimal</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>displayInfo</td>
+                                    <td>No</td>
+                                    <td>Detailed information for displaying the product on the storefront.</td>
+                                    <td>AttributeVocabularyValueDisplayInfo</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isDefault</td>
+                                    <td>Yes</td>
+                                    <td>If true, the product option value is the default value that the merchant supplied.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isEnabled</td>
+                                    <td>Yes</td>
+                                    <td>If true, the product option value is available for a shopper to choose. During configuration, this property will be false if the option value is invalid with other selected options.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isSelected</td>
+                                    <td>Yes</td>
+                                    <td>If true, the entity is selected. If false, the entity is not selected.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>shopperEnteredValue</td>
+                                    <td>No</td>
+                                    <td>The product attribute value entered by the shopper, if applicable.</td>
+                                    <td>object</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>stringValue</td>
+                                    <td>No</td>
+                                    <td>The string value entered for a product option attribute.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>value</td>
+                                    <td>No</td>
+                                    <td>The value of a product option attribute.</td>
+                                    <td>object</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.ProductPrice
+	</h1>
+                        <p>
+		The price of the product in the specified currency code (USD). This price can either be the sale price or the price for which the merchant intends to sell the product.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>catalogListPrice</td>
+                                    <td>Yes</td>
+                                    <td>The list price of the product in the catalog.</td>
+                                    <td>decimal</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>catalogSalePrice</td>
+                                    <td>Yes</td>
+                                    <td>The sale price defined for the product in the catalog.</td>
+                                    <td>decimal</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>creditValue</td>
+                                    <td>Yes</td>
+                                    <td>The monetary value to credit to the product price.</td>
+                                    <td>decimal</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>discount</td>
+                                    <td>No</td>
+                                    <td>The discount applied to the product price.</td>
+                                    <td>AppliedDiscount</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>msrp</td>
+                                    <td>Yes</td>
+                                    <td>The manufacturer's suggested retail price for the product.</td>
+                                    <td>decimal</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>price</td>
+                                    <td>Yes</td>
+                                    <td>The price the merchant intends to charge for the product.</td>
+                                    <td>decimal</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>priceType</td>
+                                    <td>No</td>
+                                    <td>The price type that displays on the storefront website for the Price field, which is List, MAP, or CatalogSalePrice</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>salePrice</td>
+                                    <td>Yes</td>
+                                    <td>The sale price defined for the product.</td>
+                                    <td>decimal</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>salePriceType</td>
+                                    <td>No</td>
+                                    <td>The price type that displays on the storefront website for the Sale Price field, which is CatalogSalePrice, DiscountedList, or DiscountedCatalogSalePrice</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.ProductPriceRange
+	</h1>
+                        <p>
+		For products with options that vary the cost of the product, the range between lowest and highest possible price of the product based on the current selection of options.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>lower</td>
+                                    <td>No</td>
+                                    <td>The lowest possible price value for a product with options that vary the cost of the product.</td>
+                                    <td>ProductPrice</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>upper</td>
+                                    <td>No</td>
+                                    <td>Thw highest possible price value for a product with options that vary the cost of the product.</td>
+                                    <td>ProductPrice</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.ProductPricingBehaviorInfo
+	</h1>
+                        <p>
+		Properties that describe the behavior the system uses when determining the price of the product.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>discountsRestricted</td>
+                                    <td>Yes</td>
+                                    <td>If true, the system cannot apply any discounts to this product. Discount restrictions are defined at the master catalog level. Client administrators cannot override discount restrictions at the catalog level, but they can limit the restriction to a defined time interval.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>discountsRestrictedEndDate</td>
+                                    <td>Yes</td>
+                                    <td>The date and time on which the discount restriction period ends.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>discountsRestrictedStartDate</td>
+                                    <td>Yes</td>
+                                    <td>The date and time on which the discount restriction period starts.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.ProductProperty
+	</h1>
+                        <p>
+		Details of a property attribute defined for a product.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>attributeDetail</td>
+                                    <td>No</td>
+                                    <td>Details of the attribute defined as a product property.</td>
+                                    <td>AttributeDetail</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>attributeFQN</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The fully qualified name of the attribute, which is a user defined attribute identifier.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isHidden</td>
+                                    <td>Yes</td>
+                                    <td>If true, the product property does not appear for the product in the storefront.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isMultiValue</td>
+                                    <td>Yes</td>
+                                    <td>If true, the product property can have more than one selected value.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>values</td>
+                                    <td>No</td>
+                                    <td>List of values defined for the product property attribute.</td>
+                                    <td>ProductPropertyValue</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.ProductPropertyValue
+	</h1>
+                        <p>
+		Values of a product property attribute.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>displayInfo</td>
+                                    <td>No</td>
+                                    <td>Detailed information on displaying a product on the storefront.</td>
+                                    <td>AttributeVocabularyValueDisplayInfo</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>stringValue</td>
+                                    <td>No</td>
+                                    <td>Property string value in the language specified in the locale code for the product storefront.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>value</td>
+                                    <td>No</td>
+                                    <td>Value of the product property.</td>
+                                    <td>object</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.ProductPurchasableState
+	</h1>
+                        <p>
+		The current state of the product purchase determines whether or not the product is eligible for purchase. Products with options are only purchasable if the shopper has selected all required options. If the product is not ready for purchase, a message lists missing options that are required.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>isPurchasable</td>
+                                    <td>No</td>
+                                    <td>If true, the entity has met all requirements and considered a purchasable entity.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>messages</td>
+                                    <td>No</td>
+                                    <td>List of messages associated with the product if the product is not ready for purchase.</td>
+                                    <td>ValidationMessage</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.ProductSearchResult
+	</h1>
+                        <p>
+		The result of a product search.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>facets</td>
+                                    <td>No</td>
+                                    <td>The facets applied to index products in the product search result.</td>
+                                    <td>Facet</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Paged collection of runtime product search results. When requesting all contract content document types, the item array includes JSON for all matching documents.</p>
+                                    </td>
+                                    <td>Product</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the maximum amount of pages to return. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the amount of items per page. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the page to start for the paged retrieved JSON. The default starts at 0. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.ProductValidationSummary
+	</h1>
+                        <p>
+		Summary list of the product validation in a storefront, including options selected by the shopper.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>bundledProducts</td>
+                                    <td>No</td>
+                                    <td>Properties of a collection of component products that make up a single product bundle with its own product code.</td>
+                                    <td>BundledProductSummary</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>categories</td>
+                                    <td>No</td>
+                                    <td>The list of product categories for the storefront.</td>
+                                    <td>Category</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>fulfillmentTypesSupported</td>
+                                    <td>No</td>
+                                    <td>List of fulfillment types that the product supports.</td>
+                                    <td>string</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>goodsType</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>This is the goods type of the product. Possible values are “Physical,” and “DigitalCredit”. This comes from the productType of the product. Products are defaulted to a Physical goodsType. Gift cards have a goodsType of DigitalCredit.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>image</td>
+                                    <td>No</td>
+                                    <td>The image configured for the product on the storefront.</td>
+                                    <td>ProductImage</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>inventoryInfo</td>
+                                    <td>No</td>
+                                    <td>Properties of the active inventory level of the associated product.</td>
+                                    <td>ProductInventoryInfo</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isPackagedStandAlone</td>
+                                    <td>Yes</td>
+                                    <td>If true, this product should not be packaged with other items and should ship by itself.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isTaxable</td>
+                                    <td>No</td>
+                                    <td>If true, the entity is subject to tax based on the relevant tax rate.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>measurements</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The measurements in height, length, weight and width for a product.</p>
+                                    </td>
+                                    <td>PackageMeasurements</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>mfgPartNumber</td>
+                                    <td>No</td>
+                                    <td>The manufacturer's part number for the product.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>price</td>
+                                    <td>No</td>
+                                    <td>Price that the merchant intends to sell the product which is not necessarily the list price. This is the price the merchant intends to sell the product if no sale price is present.</td>
+                                    <td>ProductPrice</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pricingBehavior</td>
+                                    <td>No</td>
+                                    <td>Properties that describe the behavior the system uses when determining the price of the product.</td>
+                                    <td>ProductPricingBehaviorInfo</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>productCode</td>
+                                    <td>No</td>
+                                    <td>The unique product code.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>productName</td>
+                                    <td>No</td>
+                                    <td>The descriptive brief product name.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>productShortDescription</td>
+                                    <td>No</td>
+                                    <td>Brief description of the product typically used when the product is displayed in a list or in search results.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>productType</td>
+                                    <td>No</td>
+                                    <td>The product type.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>productUsage</td>
+                                    <td>No</td>
+                                    <td>The usage type of this product, which is Standard (a single product without configurable options), Configurable (a product that includes configurable option attributes), Bundle (a collection of products sold as a single entity), or Component (an individual product that represents a component in a bundle).</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>properties</td>
+                                    <td>No</td>
+                                    <td>The list of product properties configured in product admin.</td>
+                                    <td>ProductProperty</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>purchasableState</td>
+                                    <td>No</td>
+                                    <td>The current state of the product and whether or not it is available for purchasing. If the product is not eligible for purchase, the validation message is included.</td>
+                                    <td>ProductPurchasableState</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>upc</td>
+                                    <td>No</td>
+                                    <td>The universal product code defined for the product.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>variationProductCode</td>
+                                    <td>No</td>
+                                    <td>Merchant-created code associated with a specific product variation. Variation product codes maintain an association with the base product code.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.SearchSuggestion
+	</h1>
+                        <p>
+		Suggest product search terms to a customer based on defined queries.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>suggestion</td>
+                                    <td>No</td>
+                                    <td>The object content for the search suggestion.</td>
+                                    <td>object</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>suggestionType</td>
+                                    <td>No</td>
+                                    <td>The suggestion type.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.SearchSuggestionGroup
+	</h1>
+                        <p>A group of product search terms to suggest to a customer based on defined queries.
+</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>The name of the suggestion group.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>suggestions</td>
+                                    <td>No</td>
+                                    <td>The collection of suggestions.</td>
+                                    <td>SearchSuggestion</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.SearchSuggestionResult
+	</h1>
+                        <p>The results of the suggested search terms made to the customer based on queries.</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>query</td>
+                                    <td>No</td>
+                                    <td>The query that was entered.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>suggestionGroups</td>
+                                    <td>No</td>
+                                    <td>The collection of suggestion objects.</td>
+                                    <td>SearchSuggestionGroup</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ProductRuntime.Contracts.ValidationMessage
+	</h1>
+                        <p>
+		Properties of a message displayed when a product validation failure occurs for a shopper in a storefront.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>message</td>
+                                    <td>No</td>
+                                    <td>The contents of the message displayed to the user when the product validation failure occurs.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>severity</td>
+                                    <td>No</td>
+                                    <td>The severity level of the product validation failure.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>source</td>
+                                    <td>No</td>
+                                    <td>The entity that triggered the product validation.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>sourceId</td>
+                                    <td>No</td>
+                                    <td>Unique identifier of the entity that triggered the validation.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>validationType</td>
+                                    <td>No</td>
+                                    <td>The validation type.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mozu Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer__logo"><a href="http://www.mozu.com" target="_blank"><img src="http://www.mozu.com/sites/all/themes/mozu_aurora/logo.png" style="padding-top: 7px;" /></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                    </div>
+                    <div class="col-md-3">
+                        <p class="pull-right footer__icons"><a href="https://twitter.com/MozuCommerce"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-twitter"></i></button></a><a href="http://developer.mozu.com/tools" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-code-fork"></i></button></a><a href="http://www.mozu.com/contact"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-comments-o"></i></button></a><a href="http://www.mozu.com/legal"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-copyright"></i></button></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Required for Scrollspy/Affix/Bootstrap -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js">
+        </script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/scrollspy.js">
+        </script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/affix.js">
+        </script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js">
+        </script>
+        <script src="../Resources/Javascript/affix-dynamic.js">
+        </script>
+        <!-- Scrollspy active link script -->
+        <script>/* <![CDATA[ */
+
+			$( document ).ready(function() {
+			$('body').scrollspy({
+			target: '.bs-docs-sidebar',
+			offset: 20
+			});
+			}); 
+		
+		/* ]]> */</script>
+        <!-- Affix for sidebar -->
+        <!-- Toggler Script for expand/collapse sidebar -->
+        <script>/* <![CDATA[ */
+		$(document).ready(function(){
+
+		$("#toggler").click(function(){
+		$(this).toggleClass('active, inactive');
+			})
+		})
+		/* ]]> */</script>
+    </body>
+</html>

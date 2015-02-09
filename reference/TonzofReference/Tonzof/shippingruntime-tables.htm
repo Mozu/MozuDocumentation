@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html data-mc-runtime-file-type="Topic" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <!-- Dev Center Masterpage - multiple page sidebar, topic via proxy, footer across all -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Mozu" />
+        <meta name="description" content="Dev Center online help documentation." />
+        <meta name="keywords" content="Mozu, Dev Center, developer, help" />
+        <link rel="shortcut icon" href="http://developer.mozu.com/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" /><title>
+		Mozu.ShippingRuntime.Contracts.CarrierRatesResponse
+	</title>
+        <!-- Mozu CSS -->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries. Again, you should technically remove "http:"; however, doing so increases Flare's build time on the oder of HOURS. -->
+        <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+		<![endif]-->
+        <!-- Insert Google Analytics Here -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/mozu-bootswatch-api.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="main">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button><a class="navbar-brand" href="index.htm"> <img src="../Resources/MasterPages/BootstrapSource/icon_mozu_red_m.png" style="margin-top: -9px;" /></a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                    <div class="navbar-collapse collapse">
+                        <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li value="1"><a href="http://developer.mozu.com/">Dev Center</a>
+                            </li>
+                            <li value="2"><a href="http://developer.mozu.com/api">Mozu API</a>
+                            </li>
+                            <li value="3"><a href="http://developer.mozu.com/learn">Mozu Learn</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!-- <div class="divide-nav" role="navigation">
+                <div class="container"> <MadCap:breadcrumbsProxy /> </div>
+            </div> -->
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3" style="margin-top: 60px;">
+                        <nav class="bs-docs-sidebar">
+                            <!--Side Bar Multipage -->
+                            <ul class="nav nav-stacked">
+                                <div class="side-heading">List of Mozu Tables</div>
+                                <li value="2"><a href="adminuser-tables.htm">AdminUser Tables</a>
+                                </li>
+                                <li value="3"><a href="appdev-tables.htm">AppDev Tables</a>
+                                </li>
+                                <li value="4"><a href="commerceruntime-tables.htm">CommerceRuntime Tables</a>
+                                </li>
+                                <li value="5"><a href="content-tables.htm">Content Tables</a>
+                                </li>
+                                <li value="6"><a href="core-api-tables.htm">Core API Tables</a>
+                                </li>
+                                <li value="7"><a href="extensible-tables.htm">Core Extensible Tables</a>
+                                </li>
+                                <li value="8"><a href="thirdparty-tables.htm">Core ThirdParty Tables</a>
+                                </li>
+                                <li value="9"><a href="customer-tables.htm">Customer Tables</a>
+                                </li>
+                                <li value="10"><a href="event-tables.htm">Event Tables</a>
+                                </li>
+                                <li value="11"><a href="installedapps-tables.htm">InstalledApplications Tables</a>
+                                </li>
+                                <li value="12"><a href="location-tables.htm">Location Tables</a>
+                                </li>
+                                <li value="13"><a href="paymentsvc-tables.htm">PaymentService Tables</a>
+                                </li>
+                                <li value="14"><a href="pricingruntime-tables.htm">PricingRuntime Tables</a>
+                                </li>
+                                <li value="15"><a href="productadmin-tables.htm">ProductAdmin Tables</a>
+                                </li>
+                                <li value="16"><a href="productruntime-tables.htm">ProductRuntime Tables</a>
+                                </li>
+                                <li value="17"><a href="reference-tables.htm">Reference Tables</a>
+                                </li>
+                                <li value="18"><a href="#">ShippingRuntime Tables</a>
+                                </li>
+                                <li value="19"><a href="sitesettings-general-tables.htm">SiteSettings General Tables</a>
+                                </li>
+                                <li value="20"><a href="sitesettings-order-tables.htm">SiteSettings Order Tables</a>
+                                </li>
+                                <li value="21"><a href="sitesettings-shipping-tables.htm">SiteSettings Shipping Tables</a>
+                                </li>
+                                <li value="22"><a href="../../Tonzof/tenants-tables.htm">Tenants Shipping Tables</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-9 content">
+                        <!-- Flare topic compiler -->
+                        <h1 class="table-title">
+		Mozu.ShippingRuntime.Contracts.CarrierRatesResponse
+	</h1>
+                        <p>
+		Arrayed list of calculated shipping rates for the specified carrier.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>carrierId</td>
+                                    <td>No</td>
+                                    <td>Unique identifier of the shipping carrier.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>customAttributes</td>
+                                    <td>No</td>
+                                    <td>Collection of carrier-specific key-value attribute pairs required to retrieve a shipping rate request.</td>
+                                    <td>CustomAttribute</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>shippingRates</td>
+                                    <td>No</td>
+                                    <td>Array list of calculated shipping rates for the specified carrier.</td>
+                                    <td>ShippingRate</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.ShippingRuntime.Contracts.Category
+	</h1>
+                        <p>
+                        </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>No</td>
+                                    <td>The product id.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>parent</td>
+                                    <td>No</td>
+                                    <td>The parent category that the product belongs to.</td>
+                                    <td>Category</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.ShippingRuntime.Contracts.CustomAttribute
+	</h1>
+                        <p>
+		Properties of a custom attribute used to integrate with a shipping provider, which consists of an array of necessary key-value pairs.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>childAttributes</td>
+                                    <td>No</td>
+                                    <td>Collection of child attributes associated with a shipping provider integration.</td>
+                                    <td>CustomAttribute</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>key</td>
+                                    <td>No</td>
+                                    <td>Key required for a custom attribute associated with a shipping provider integration, as part of a key-value pair.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>value</td>
+                                    <td>No</td>
+                                    <td>Value for a custom attribute associated with a shipping provider integration, as part of a key-value pair.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.ShippingRuntime.Contracts.ItemMeasurements
+	</h1>
+                        <p>
+		Measured weight and dimensions of the packaged item to be shipped.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>girth</td>
+                                    <td>Yes</td>
+                                    <td>Girth of the package in imperial units of feet and inches.</td>
+                                    <td>decimal</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>height</td>
+                                    <td>No</td>
+                                    <td>Height of the package in imperial units of feet and inches.</td>
+                                    <td>Measurement</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>length</td>
+                                    <td>No</td>
+                                    <td>Length of the package in imperial units of feet and inches.</td>
+                                    <td>Measurement</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>weight</td>
+                                    <td>No</td>
+                                    <td>Weight of the package in imperial units of pounds and ounces.</td>
+                                    <td>Measurement</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>width</td>
+                                    <td>No</td>
+                                    <td>Width of the package in imperial units of feet and inches.</td>
+                                    <td>Measurement</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.ShippingRuntime.Contracts.Money
+	</h1>
+                        <p>
+		Calculated properties of a shipping total based on the supplied amount and currency code.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>currencyCode</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The currency code associated with the default currency for this shipping total.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>value</td>
+                                    <td>No</td>
+                                    <td>Amount value of the calculated shipping total.</td>
+                                    <td>decimal</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.ShippingRuntime.Contracts.Notification
+	</h1>
+                        <p>
+		Properties of a success failure notification message associated with a shipping label request.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>code</td>
+                                    <td>No</td>
+                                    <td>Error code associated with the notification.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>message</td>
+                                    <td>No</td>
+                                    <td>Text content of the success/failure notification message.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>source</td>
+                                    <td>No</td>
+                                    <td>The source entity associated with the success failure, such as an order or package.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.ShippingRuntime.Contracts.Package
+	</h1>
+                        <p>The runtime shipping properties for a product package.</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>contentsValue</td>
+                                    <td>Yes</td>
+                                    <td>The monetary amount in the package.</td>
+                                    <td>decimal</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>customAttributes</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>List of key-value pairs that represent custom attributes associated with the request.</p>
+                                    </td>
+                                    <td>CustomAttribute</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>No</td>
+                                    <td>Unique identifier of the package.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isGift</td>
+                                    <td>Yes</td>
+                                    <td>Whether or not this package is a gift.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>measurements</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The measurements in height, length, weight and width for a product.</p>
+                                    </td>
+                                    <td>PackageMeasurements</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>packagingType</td>
+                                    <td>No</td>
+                                    <td>Selected PackagingType.  Shipping provider dependent.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>requiresSignature</td>
+                                    <td>Yes</td>
+                                    <td>Package delivery requires a signature when true.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.ShippingRuntime.Contracts.PackageMeasurements
+	</h1>
+                        <p>
+                        </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>height</td>
+                                    <td>No</td>
+                                    <td>Height of the package in imperial units of feet and inches.</td>
+                                    <td>Measurement</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>length</td>
+                                    <td>No</td>
+                                    <td>Length of the package in imperial units of feet and inches.</td>
+                                    <td>Measurement</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>weight</td>
+                                    <td>No</td>
+                                    <td>Weight of the package in imperial units of pounds and ounces.</td>
+                                    <td>Measurement</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>width</td>
+                                    <td>No</td>
+                                    <td>Width of the package in imperial units of feet and inches.</td>
+                                    <td>Measurement</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.ShippingRuntime.Contracts.PackageResponse
+	</h1>
+                        <p>
+		Properties of a package shipping label response, including the label image and tracking number.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>customAttributes</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>List of key-value pairs that represent custom attributes associated with the request.</p>
+                                    </td>
+                                    <td>CustomAttribute</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>No</td>
+                                    <td>Unique identifier of the package shipping label response response.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>label</td>
+                                    <td>No</td>
+                                    <td>The package shipping label.</td>
+                                    <td>ShippingLabel</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>trackingNumber</td>
+                                    <td>No</td>
+                                    <td>The tracking number of the package shipping label.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.ShippingRuntime.Contracts.ProductOption
+	</h1>
+                        <p>
+                        </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>attributeFQN</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The fully qualified name of the attribute, which is a user defined attribute identifier.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>dataType</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The data type, such as bool or string, used in this option attribute.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>value</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>If the value is an object, the value selected.</p>
+                                    </td>
+                                    <td>object</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.ShippingRuntime.Contracts.ProductProperty
+	</h1>
+                        <p>
+                        </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>attributeFQN</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The fully qualified name of the attribute, which is a user defined attribute identifier.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>dataType</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The data type, such as bool or string, used in this option attribute.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>values</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>If the value is an object, the value selected.</p>
+                                    </td>
+                                    <td>object</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.ShippingRuntime.Contracts.ProductSummary
+	</h1>
+                        <p>
+                        </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>categories</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The list of all categories associated with the product.</p>
+                                    </td>
+                                    <td>Category</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>options</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The list of all options associated with the product.</p>
+                                    </td>
+                                    <td>ProductOption</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>productCode</td>
+                                    <td>No</td>
+                                    <td>Merchant-created code that uniquely identifies the product.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>productType</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The product type template associated with the product on the storefront.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>properties</td>
+                                    <td>No</td>
+                                    <td>The properties of the product.</td>
+                                    <td>ProductProperty</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>unitMeasurements</td>
+                                    <td>No</td>
+                                    <td>        Product specific dimensions.  <![CDATA[
+]]></td>
+                                    <td>ItemMeasurements</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.ShippingRuntime.Contracts.RateRequest
+	</h1>
+                        <p>
+		Properties required to request a shipping rate calculation.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>carrierIds</td>
+                                    <td>No</td>
+                                    <td>List of shipping carriers for which to retrieve shipping rate information.</td>
+                                    <td>string</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>customAttributes</td>
+                                    <td>No</td>
+                                    <td>List of key-value pairs that represent custom attributes associated with the request.</td>
+                                    <td>CustomAttribute</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>destinationAddress</td>
+                                    <td>No</td>
+                                    <td>The physical address to which the shipment will ship.</td>
+                                    <td>Address</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>estimatedShipmentDate</td>
+                                    <td>Yes</td>
+                                    <td>The date and time the shipment will be shipped to the shopper.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isDestinationAddressCommercial</td>
+                                    <td>Yes</td>
+                                    <td>If true, the destination address associated with the shipping rate request is a commercial address.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isoCurrencyCode</td>
+                                    <td>No</td>
+                                    <td>The ISO&#160;currency code.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>List of items to include in the shipping rate request.</td>
+                                    <td>RateRequestItem</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>orderTotal</td>
+                                    <td>Yes</td>
+                                    <td>The total amount of the order used to calculate the shipping rate estimate.</td>
+                                    <td>decimal</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>originAddress</td>
+                                    <td>No</td>
+                                    <td>The physical address from which the shipment will ship.</td>
+                                    <td>Address</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>shippingServiceTypes</td>
+                                    <td>No</td>
+                                    <td>The shipping methods associated with this request.</td>
+                                    <td>string</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.ShippingRuntime.Contracts.RateRequestItem
+	</h1>
+                        <p>
+		Properties of an item for which to calculate a shipping rate.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>itemId</td>
+                                    <td>No</td>
+                                    <td>Unique identifier of the item to ship, for which to calculate a shipping rate.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>productSummaries</td>
+                                    <td>No</td>
+                                    <td>        If product summaries are populated, this information will be utilized in Product Rules (e.g. ProductCode eq "ABC" or (Weight.Unit eq "lbs" and Weight.Value ge 50)
+</td>
+                                    <td>ProductSummary</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>quantity</td>
+                                    <td>Yes</td>
+                                    <td>Quantity of the item for which to calculate the shipping rate.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>shipsByItself</td>
+                                    <td>Yes</td>
+                                    <td>If true, this item must ship separately from other items in a shipment.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>unitMeasurements</td>
+                                    <td>No</td>
+                                    <td>The measured weight and dimensions of the item to ship.</td>
+                                    <td>ItemMeasurements</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.ShippingRuntime.Contracts.RatesResponse
+	</h1>
+                        <p>
+		Properties of the calculated shipping rate based on the information supplied in the request.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>rates</td>
+                                    <td>No</td>
+                                    <td>Arrayed list of calculated shipping rates for each assocuated carrier.</td>
+                                    <td>CarrierRatesResponse</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>shippingZoneCode</td>
+                                    <td>No</td>
+                                    <td>The code for the shipping zone.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.ShippingRuntime.Contracts.Shipment
+	</h1>
+                        <p>
+		Properties of a shipment used to send packages for order fulfillment.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>customAttributes</td>
+                                    <td>No</td>
+                                    <td>Array list of custom attributes associated with a shipping provider integration, which consist of key-value pairs.</td>
+                                    <td>CustomAttribute</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>destination</td>
+                                    <td>No</td>
+                                    <td>The address to which the shipment will be delivered.</td>
+                                    <td>Contact</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>estimatedShipmentDate</td>
+                                    <td>Yes</td>
+                                    <td>The date and time estimated for the shipment to depart from the origin address.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>orderTotal</td>
+                                    <td>Yes</td>
+                                    <td>The total amount of the order associated with the shipment.</td>
+                                    <td>decimal</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>origin</td>
+                                    <td>No</td>
+                                    <td>The address from which the shipment will originate, such as a warehouse.</td>
+                                    <td>Contact</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>packages</td>
+                                    <td>No</td>
+                                    <td>Array list of packages in this shipment.</td>
+                                    <td>Package</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>shippingMethodCodes</td>
+                                    <td>No</td>
+                                    <td>Array of code that identify the associated service type shipping methods for a shipment.</td>
+                                    <td>string</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.ShippingRuntime.Contracts.ShipmentRequest
+	</h1>
+                        <p>
+		Properties of a shipment required to generate a shipping label.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>carrierId</td>
+                                    <td>No</td>
+                                    <td>Identifier of the shipping carrier associated with the shipment, such as UPS or FedEx.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>customAttributes</td>
+                                    <td>No</td>
+                                    <td>Collection of carrier-specific key-value attribute pairs required to generate a shipping label for this shipment.</td>
+                                    <td>CustomAttribute</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>isoCurrencyCode</td>
+                                    <td>No</td>
+                                    <td>The ISO currency code.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>requiresSignature</td>
+                                    <td>Yes</td>
+                                    <td>If true, a signature is required to deliver this shipment.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>shipment</td>
+                                    <td>No</td>
+                                    <td>Properties of the shipment for which to generate a label.</td>
+                                    <td>Shipment</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>shipmentRequestType</td>
+                                    <td>No</td>
+                                    <td>The type of shipment request selected for this shipment.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>shippingServiceType</td>
+                                    <td>No</td>
+                                    <td>The code of the shipping method service type associated with the shipment, such as UPS Ground.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.ShippingRuntime.Contracts.ShipmentResponse
+	</h1>
+                        <p>
+		Properties of the shipping label information generated for the shipment.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>customAttributes</td>
+                                    <td>No</td>
+                                    <td>Collection of carrier-specific key-value attribute pairs returned for the generated shipping label.</td>
+                                    <td>CustomAttribute</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>isSuccessful</td>
+                                    <td>No</td>
+                                    <td>If true, the shipment request for shipping label generation was successful. Unsuccessful requests include logged messages.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>messages</td>
+                                    <td>No</td>
+                                    <td>Collection of messages returned for the shipment request, including any success or failure notifications.</td>
+                                    <td>Notification</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>packageResponses</td>
+                                    <td>No</td>
+                                    <td>Collection of responses for each package, which includes the shipping label image.</td>
+                                    <td>PackageResponse</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>shippingTotal</td>
+                                    <td>No</td>
+                                    <td>The calculated shipping total based on the supplied currency code and amount.</td>
+                                    <td>Money</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>trackingNumber</td>
+                                    <td>No</td>
+                                    <td>The tracking code associated with the package shipping label.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.ShippingRuntime.Contracts.ShippingItemRate
+	</h1>
+                        <p>
+		Properties of a shipping rate calculated for a line item in a shipment.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>amount</td>
+                                    <td>Yes</td>
+                                    <td>The calculated shipping amount for an item in a shipment.</td>
+                                    <td>decimal</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>itemId</td>
+                                    <td>No</td>
+                                    <td>Unique identifier of the item for which to calculate a shipping rate.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>quantity</td>
+                                    <td>Yes</td>
+                                    <td>The quantity of the line item for which to calculate shipping.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.ShippingRuntime.Contracts.ShippingLabel
+	</h1>
+                        <p>
+		Properties of a shipping label to generate for a shipment.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>imageData</td>
+                                    <td>No</td>
+                                    <td>The information on the shipping label.</td>
+                                    <td>byte</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>imageFormat</td>
+                                    <td>No</td>
+                                    <td>The format for the shipping label.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.ShippingRuntime.Contracts.ShippingRate
+	</h1>
+                        <p>
+		Properties of a shipping rate calculated for a specified carrier.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>amount</td>
+                                    <td>Yes</td>
+                                    <td>The total calculated shipping amount requested for the package or shipment.</td>
+                                    <td>decimal</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>code</td>
+                                    <td>No</td>
+                                    <td>The carrier-defined alphanumeric code associated with this shipping rate.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>content</td>
+                                    <td>No</td>
+                                    <td>Localized content for a shipping rate based on the defined locale code.</td>
+                                    <td>ShippingRateLocalizedContent</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>customAttributes</td>
+                                    <td>No</td>
+                                    <td>Collection of carrier-specific key-value attribute pairs required to retrieve a shipping rate request.</td>
+                                    <td>CustomAttribute</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>daysInTransit</td>
+                                    <td>Yes</td>
+                                    <td>The number of days the shipment will spend between the origin address and the destination address.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>messages</td>
+                                    <td>No</td>
+                                    <td>Array list of success/failure messages associated with the shipping rate validation.</td>
+                                    <td>ShippingRateValidationMessage</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>shippingItemRates</td>
+                                    <td>No</td>
+                                    <td>Properties of a calculated shipping rate for individual line items in a shipment.</td>
+                                    <td>ShippingItemRate</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.ShippingRuntime.Contracts.ShippingRateLocalizedContent
+	</h1>
+                        <p>
+		The name of the shipping rate in the language specified by the defined locale code.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>localeCode</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Language used for the entity. Currently, only en-US is supported.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>The name of the shipping rate in the language specified by the defined locale code.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.ShippingRuntime.Contracts.ShippingRateValidationMessage
+	</h1>
+                        <p>
+		Properties of a success/failure message notification associated with validating a shipping rate.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>helpLink</td>
+                                    <td>No</td>
+                                    <td>URL displayed with the shipping validation message that links to help information.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>message</td>
+                                    <td>No</td>
+                                    <td>Content of the shipping rate validation message.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>severity</td>
+                                    <td>No</td>
+                                    <td>Severity level of the shipping rate validation failure.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mozu Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer__logo"><a href="http://www.mozu.com" target="_blank"><img src="http://www.mozu.com/sites/all/themes/mozu_aurora/logo.png" style="padding-top: 7px;" /></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                    </div>
+                    <div class="col-md-3">
+                        <p class="pull-right footer__icons"><a href="https://twitter.com/MozuCommerce"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-twitter"></i></button></a><a href="http://developer.mozu.com/tools" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-code-fork"></i></button></a><a href="http://www.mozu.com/contact"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-comments-o"></i></button></a><a href="http://www.mozu.com/legal"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-copyright"></i></button></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Required for Scrollspy/Affix/Bootstrap -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js">
+        </script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/scrollspy.js">
+        </script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/affix.js">
+        </script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js">
+        </script>
+        <script src="../Resources/Javascript/affix-dynamic.js">
+        </script>
+        <!-- Scrollspy active link script -->
+        <script>/* <![CDATA[ */
+
+			$( document ).ready(function() {
+			$('body').scrollspy({
+			target: '.bs-docs-sidebar',
+			offset: 20
+			});
+			}); 
+		
+		/* ]]> */</script>
+        <!-- Affix for sidebar -->
+        <!-- Toggler Script for expand/collapse sidebar -->
+        <script>/* <![CDATA[ */
+		$(document).ready(function(){
+
+		$("#toggler").click(function(){
+		$(this).toggleClass('active, inactive');
+			})
+		})
+		/* ]]> */</script>
+    </body>
+</html>

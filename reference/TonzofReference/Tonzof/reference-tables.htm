@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html data-mc-runtime-file-type="Topic" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <!-- Dev Center Masterpage - multiple page sidebar, topic via proxy, footer across all -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Mozu" />
+        <meta name="description" content="Dev Center online help documentation." />
+        <meta name="keywords" content="Mozu, Dev Center, developer, help" />
+        <link rel="shortcut icon" href="http://developer.mozu.com/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" /><title>
+		Mozu.Reference.Contracts.AddressSchema
+	</title>
+        <!-- Mozu CSS -->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries. Again, you should technically remove "http:"; however, doing so increases Flare's build time on the oder of HOURS. -->
+        <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+		<![endif]-->
+        <!-- Insert Google Analytics Here -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/mozu-bootswatch-api.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="main">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button><a class="navbar-brand" href="index.htm"> <img src="../Resources/MasterPages/BootstrapSource/icon_mozu_red_m.png" style="margin-top: -9px;" /></a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                    <div class="navbar-collapse collapse">
+                        <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li value="1"><a href="http://developer.mozu.com/">Dev Center</a>
+                            </li>
+                            <li value="2"><a href="http://developer.mozu.com/api">Mozu API</a>
+                            </li>
+                            <li value="3"><a href="http://developer.mozu.com/learn">Mozu Learn</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!-- <div class="divide-nav" role="navigation">
+                <div class="container"> <MadCap:breadcrumbsProxy /> </div>
+            </div> -->
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3" style="margin-top: 60px;">
+                        <nav class="bs-docs-sidebar">
+                            <!--Side Bar Multipage -->
+                            <ul class="nav nav-stacked">
+                                <div class="side-heading">List of Mozu Tables</div>
+                                <li value="2"><a href="adminuser-tables.htm">AdminUser Tables</a>
+                                </li>
+                                <li value="3"><a href="appdev-tables.htm">AppDev Tables</a>
+                                </li>
+                                <li value="4"><a href="commerceruntime-tables.htm">CommerceRuntime Tables</a>
+                                </li>
+                                <li value="5"><a href="content-tables.htm">Content Tables</a>
+                                </li>
+                                <li value="6"><a href="core-api-tables.htm">Core API Tables</a>
+                                </li>
+                                <li value="7"><a href="extensible-tables.htm">Core Extensible Tables</a>
+                                </li>
+                                <li value="8"><a href="thirdparty-tables.htm">Core ThirdParty Tables</a>
+                                </li>
+                                <li value="9"><a href="customer-tables.htm">Customer Tables</a>
+                                </li>
+                                <li value="10"><a href="event-tables.htm">Event Tables</a>
+                                </li>
+                                <li value="11"><a href="installedapps-tables.htm">InstalledApplications Tables</a>
+                                </li>
+                                <li value="12"><a href="location-tables.htm">Location Tables</a>
+                                </li>
+                                <li value="13"><a href="paymentsvc-tables.htm">PaymentService Tables</a>
+                                </li>
+                                <li value="14"><a href="pricingruntime-tables.htm">PricingRuntime Tables</a>
+                                </li>
+                                <li value="15"><a href="productadmin-tables.htm">ProductAdmin Tables</a>
+                                </li>
+                                <li value="16"><a href="productruntime-tables.htm">ProductRuntime Tables</a>
+                                </li>
+                                <li value="17"><a href="#">Reference Tables</a>
+                                </li>
+                                <li value="18"><a href="shippingruntime-tables.htm">ShippingRuntime Tables</a>
+                                </li>
+                                <li value="19"><a href="sitesettings-general-tables.htm">SiteSettings General Tables</a>
+                                </li>
+                                <li value="20"><a href="sitesettings-order-tables.htm">SiteSettings Order Tables</a>
+                                </li>
+                                <li value="21"><a href="sitesettings-shipping-tables.htm">SiteSettings Shipping Tables</a>
+                                </li>
+                                <li value="22"><a href="../../Tonzof/tenants-tables.htm">Tenants Shipping Tables</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-9 content">
+                        <!-- Flare topic compiler -->
+                        <h1 class="table-title">
+		Mozu.Reference.Contracts.AddressSchema
+	</h1>
+                        <p>
+		Describes the structure of postal addresses based on the country specified. Because addresses vary from country to country, this schema allows a flexible storage structure.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>countryCode</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The 2-letter geographic code representing the country for the physical or mailing address. Currently limited to the US.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>countryLabel</td>
+                                    <td>No</td>
+                                    <td>The label associated with this country.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>fields</td>
+                                    <td>No</td>
+                                    <td>The fields to display for postal addresses associated with this country.</td>
+                                    <td>Field</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>No</td>
+                                    <td>The unique identifier of this postal address schema.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Reference.Contracts.AddressSchemaCollection
+	</h1>
+                        <p>
+		The paged collection of address schema components.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Collection of address schemas returned.</p>
+                                    </td>
+                                    <td>AddressSchema</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Reference.Contracts.Carrier
+	</h1>
+                        <p>
+                        </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>Name of the shipping carrier.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Reference.Contracts.CarrierCollection
+	</h1>
+                        <p>
+                        </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Collection of carriers returned.</p>
+                                    </td>
+                                    <td>Carrier</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Reference.Contracts.ContentLocale
+	</h1>
+                        <p>
+		Properties of a content locale that determines the language and format used for a site.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>code</td>
+                                    <td>No</td>
+                                    <td>The unique identifier for the content locale.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>The name of the content locale.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Reference.Contracts.ContentLocaleCollection
+	</h1>
+                        <p>
+		The paged collection of content locale codes that the system supports.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                    </td>
+                                    <td>ContentLocale</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Reference.Contracts.Country
+	</h1>
+                        <p>
+		The 2-letter code and corresponding country name that the system supports.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>code</td>
+                                    <td>No</td>
+                                    <td>The two-letter code of the country.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>The name of the country.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Reference.Contracts.CountryCollection
+	</h1>
+                        <p>
+		The paged collection of country codes and their corresponding names.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Collection of country codes and names returned.</p>
+                                    </td>
+                                    <td>Country</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Reference.Contracts.CreditType
+	</h1>
+                        <p>
+                        </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>The name associated with the credit type.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Reference.Contracts.CreditTypeCollection
+	</h1>
+                        <p>
+                        </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Collection of credit types returned.</p>
+                                    </td>
+                                    <td>CreditType</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Reference.Contracts.Currency
+	</h1>
+                        <p><![CDATA[
+		]]></p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>code</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Three-letter currency code that the system supports, which is derived from the ISO 4217 standard. For example, the code "EUR" for the name "Euro Member Countries" is an entry that returns in a list of items.
+	</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>The name of the currency represented by the ISO currency code.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Reference.Contracts.CurrencyCollection
+	</h1>
+                        <p><![CDATA[
+	]]></p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>
+		The paged collection of currency codes.</p>
+                                    </td>
+                                    <td>Currency</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Reference.Contracts.Field
+	</h1>
+                        <p>
+		A property that is a wrapper for additional properties pertaining to the schema such as the type, label, any associated data, an ID, and the order of the response.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>No</td>
+                                    <td>Data for the field property.</td>
+                                    <td>FieldData</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>No</td>
+                                    <td>Identifier of the field.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>label</td>
+                                    <td>No</td>
+                                    <td>Label for the field.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>order</td>
+                                    <td>No</td>
+                                    <td>Sequence of the field.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>No</td>
+                                    <td>Type of field.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Reference.Contracts.FieldData
+	</h1>
+                        <p>
+		The field property that describes the type of information pertaining to how the field renders and functions.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>code</td>
+                                    <td>No</td>
+                                    <td>Code of the field.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>value</td>
+                                    <td>No</td>
+                                    <td>The field value.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Reference.Contracts.TaxRate
+	</h1>
+                        <p>
+                        </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>countryCode</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The 2-letter geographic code representing the country for the physical or mailing address. Currently limited to the US.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>rate</td>
+                                    <td>No</td>
+                                    <td>The tax rate corresponding to the country for the physical or mailing address. Currently limited to the US.</td>
+                                    <td>decimal</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Reference.Contracts.TaxRateCollection
+	</h1>
+                        <p>
+                        </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Collection of tax rates returned.</p>
+                                    </td>
+                                    <td>TaxRate</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Reference.Contracts.TimeZone
+	</h1>
+                        <p>
+		A world date and time standard such as "Dateline Standard Time" or "UTC-12".
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>No</td>
+                                    <td>Identifier of the time zone.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isDaylightSavingsTime</td>
+                                    <td>No</td>
+                                    <td>If true, the time zone standard observes daylight savings time advancements, for example, twice a year so that evenings have more daylight and mornings have less. If false, the time zone standard does not adhere to daylight savings changes.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>offset</td>
+                                    <td>No</td>
+                                    <td>The offset associated with the time zone, such as "-12".</td>
+                                    <td>double</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Reference.Contracts.TimeZoneCollection
+	</h1>
+                        <p>
+		The paged collection of time zone properties.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Collection of time zones returned.</p>
+                                    </td>
+                                    <td>TimeZone</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Reference.Contracts.TopLevelDomainCollection
+	</h1>
+                        <p>
+		The paged collection of all top level internet domains that the system supports including general, USA-specific, infrastructure, and country codes. The Internet Assigned Numbers Authority (IANA) maintains this list.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>
+		The paged collection of all top level internet domains that the system supports including general, USA-specific, infrastructure, and country codes. The Internet Assigned Numbers Authority (IANA) maintains this list.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Reference.Contracts.UnitOfMeasure
+	</h1>
+                        <p>
+		Properties to describe the unit of measure.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>The name of the unit of measure, such as "foot".</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pluralName</td>
+                                    <td>No</td>
+                                    <td>The plural name of the unit of measure, such as "feet".</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>symbol</td>
+                                    <td>No</td>
+                                    <td>The abbreviated symbol for the unit of measure, such as "ft".</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>unitOfMeasureType</td>
+                                    <td>No</td>
+                                    <td>The type of measurement, such as length or volume.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Reference.Contracts.UnitOfMeasureCollection
+	</h1>
+                        <p>
+		The paged collection of all units of measure that the system currently supports.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The paged collection of all units of measure that the system currently supports.
+</p>
+                                    </td>
+                                    <td>UnitOfMeasure</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mozu Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer__logo"><a href="http://www.mozu.com" target="_blank"><img src="http://www.mozu.com/sites/all/themes/mozu_aurora/logo.png" style="padding-top: 7px;" /></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                    </div>
+                    <div class="col-md-3">
+                        <p class="pull-right footer__icons"><a href="https://twitter.com/MozuCommerce"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-twitter"></i></button></a><a href="http://developer.mozu.com/tools" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-code-fork"></i></button></a><a href="http://www.mozu.com/contact"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-comments-o"></i></button></a><a href="http://www.mozu.com/legal"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-copyright"></i></button></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Required for Scrollspy/Affix/Bootstrap -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js">
+        </script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/scrollspy.js">
+        </script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/affix.js">
+        </script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js">
+        </script>
+        <script src="../Resources/Javascript/affix-dynamic.js">
+        </script>
+        <!-- Scrollspy active link script -->
+        <script>/* <![CDATA[ */
+
+			$( document ).ready(function() {
+			$('body').scrollspy({
+			target: '.bs-docs-sidebar',
+			offset: 20
+			});
+			}); 
+		
+		/* ]]> */</script>
+        <!-- Affix for sidebar -->
+        <!-- Toggler Script for expand/collapse sidebar -->
+        <script>/* <![CDATA[ */
+		$(document).ready(function(){
+
+		$("#toggler").click(function(){
+		$(this).toggleClass('active, inactive');
+			})
+		})
+		/* ]]> */</script>
+    </body>
+</html>

@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html data-mc-runtime-file-type="Topic" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <!-- Dev Center Masterpage - multiple page sidebar, topic via proxy, footer across all -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Mozu" />
+        <meta name="description" content="Dev Center online help documentation." />
+        <meta name="keywords" content="Mozu, Dev Center, developer, help" />
+        <link rel="shortcut icon" href="http://developer.mozu.com/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" /><title>
+		Mozu.Content.Contracts.Document
+	</title>
+        <!-- Mozu CSS -->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries. Again, you should technically remove "http:"; however, doing so increases Flare's build time on the oder of HOURS. -->
+        <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+		<![endif]-->
+        <!-- Insert Google Analytics Here -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/mozu-bootswatch-api.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="main">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button><a class="navbar-brand" href="index.htm"> <img src="../Resources/MasterPages/BootstrapSource/icon_mozu_red_m.png" style="margin-top: -9px;" /></a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                    <div class="navbar-collapse collapse">
+                        <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li value="1"><a href="http://developer.mozu.com/">Dev Center</a>
+                            </li>
+                            <li value="2"><a href="http://developer.mozu.com/api">Mozu API</a>
+                            </li>
+                            <li value="3"><a href="http://developer.mozu.com/learn">Mozu Learn</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!-- <div class="divide-nav" role="navigation">
+                <div class="container"> <MadCap:breadcrumbsProxy /> </div>
+            </div> -->
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3" style="margin-top: 60px;">
+                        <nav class="bs-docs-sidebar">
+                            <!--Side Bar Multipage -->
+                            <ul class="nav nav-stacked">
+                                <div class="side-heading">List of Mozu Tables</div>
+                                <li value="2"><a href="adminuser-tables.htm">AdminUser Tables</a>
+                                </li>
+                                <li value="3"><a href="appdev-tables.htm">AppDev Tables</a>
+                                </li>
+                                <li value="4"><a href="commerceruntime-tables.htm">CommerceRuntime Tables</a>
+                                </li>
+                                <li value="5"><a href="#">Content Tables</a>
+                                </li>
+                                <li value="6"><a href="core-api-tables.htm">Core API Tables</a>
+                                </li>
+                                <li value="7"><a href="extensible-tables.htm">Core Extensible Tables</a>
+                                </li>
+                                <li value="8"><a href="thirdparty-tables.htm">Core ThirdParty Tables</a>
+                                </li>
+                                <li value="9"><a href="customer-tables.htm">Customer Tables</a>
+                                </li>
+                                <li value="10"><a href="event-tables.htm">Event Tables</a>
+                                </li>
+                                <li value="11"><a href="installedapps-tables.htm">InstalledApplications Tables</a>
+                                </li>
+                                <li value="12"><a href="location-tables.htm">Location Tables</a>
+                                </li>
+                                <li value="13"><a href="paymentsvc-tables.htm">PaymentService Tables</a>
+                                </li>
+                                <li value="14"><a href="pricingruntime-tables.htm">PricingRuntime Tables</a>
+                                </li>
+                                <li value="15"><a href="productadmin-tables.htm">ProductAdmin Tables</a>
+                                </li>
+                                <li value="16"><a href="productruntime-tables.htm">ProductRuntime Tables</a>
+                                </li>
+                                <li value="17"><a href="reference-tables.htm">Reference Tables</a>
+                                </li>
+                                <li value="18"><a href="shippingruntime-tables.htm">ShippingRuntime Tables</a>
+                                </li>
+                                <li value="19"><a href="sitesettings-general-tables.htm">SiteSettings General Tables</a>
+                                </li>
+                                <li value="20"><a href="sitesettings-order-tables.htm">SiteSettings Order Tables</a>
+                                </li>
+                                <li value="21"><a href="sitesettings-shipping-tables.htm">SiteSettings Shipping Tables</a>
+                                </li>
+                                <li value="22"><a href="../../Tonzof/tenants-tables.htm">Tenants Shipping Tables</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-9 content">
+                        <!-- Flare topic compiler -->
+                        <h1>
+		Mozu.Content.Contracts.Document
+	</h1>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>contentLength</td>
+                                    <td>Yes</td>
+                                    <td>The character length associated with the document content.</td>
+                                    <td>long</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>contentMimeType</td>
+                                    <td>No</td>
+                                    <td>The mime type associated with the document content, if applicable.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>contentUpdateDate</td>
+                                    <td>Yes</td>
+                                    <td>The date and time the most recent content update was made. UTC date/time. System-supplied and read-only.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>documentTypeFQN</td>
+                                    <td>No</td>
+                                    <td>Fully qualified name for the content document.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>extension</td>
+                                    <td>No</td>
+                                    <td>If applicable, the file extension associated with the document content.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>No</td>
+                                    <td>Unique identifier of the document.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>insertDate</td>
+                                    <td>Yes</td>
+                                    <td>When the document was added to the document list. System-supplied and read-only.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>listFQN</td>
+                                    <td>No</td>
+                                    <td>Fully qualified name for the list of content documents.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>The name of the document, which is unique within its folder.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>properties</td>
+                                    <td>No</td>
+                                    <td>List of properties for the given property value.</td>
+                                    <td>Json</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>publishState</td>
+                                    <td>No</td>
+                                    <td>The current state of the document, which is Active, Draft, or Latest. Active documents are published and cannot be deleted. Querying Latest returns the most recent version of the document, regardless of whether it is published or a draft.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>updateDate</td>
+                                    <td>Yes</td>
+                                    <td>Date when the document contract content was last updated.&#160;This date refreshes to the current time of the latest update.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Content.Contracts.DocumentCollection
+	</h1>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>Paged collection of content documents in the document collection. When requesting all contract content documents, the item array includes JSON for all matching documents.</td>
+                                    <td>Document</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>Sets the maximum amount of pages to return. Example: 10.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>Sets the amount of items per page. Example: 10.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>Sets the page to start for the paged retrieved JSON. The default starts at 0. Example: 10.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>Calculates the total amount of items returned in the collection.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Content.Contracts.DocumentDraftSummary
+	</h1>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>activeUpdateDate</td>
+                                    <td>Yes</td>
+                                    <td>Date and time of the active update to the document.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>documentTypeFQN</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Fully qualified name for the content document used to locate and update the document.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>draftUpdateDate</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Date when the document draft was last updated.&#160;This date refreshes to the current time of the latest update. A draft document of content has not been published.</p>
+                                    </td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>No</td>
+                                    <td>Identifier of document draft.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>listFQN</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Fully qualified name for the list of content documents.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>Name of the document draft.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>publishType</td>
+                                    <td>No</td>
+                                    <td>Whether the draft has been published.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>updatedBy</td>
+                                    <td>No</td>
+                                    <td>The Mozu user the committed the change and save of the updated document.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Content.Contracts.DocumentDraftSummaryPagedCollection
+	</h1>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Paged collection of content documents in the document draft summary collection. When requesting all draft documents, the item array includes JSON for all matching documents.</p>
+                                    </td>
+                                    <td>DocumentDraftSummary</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the maximum amount of pages to return. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the amount of items per page. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the page to start for the paged retrieved JSON. The default starts at 0. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Content.Contracts.DocumentInstallation
+	</h1>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>documentTypeFQN</td>
+                                    <td>No</td>
+                                    <td>Fully qualified name for the document type.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>locale</td>
+                                    <td>No</td>
+                                    <td>The country code locale for the document type. This identifies the localization of the document content per nationality/country.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>The name for the document for installation.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>properties</td>
+                                    <td>No</td>
+                                    <td>Properties of the document, reusable as templates for data.</td>
+                                    <td>Json</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Content.Contracts.DocumentList
+	</h1>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>documentListType</td>
+                                    <td>No</td>
+                                    <td>List of documents for the associated documentList. This creates a hierarchy of documents in lists per type (or template).</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>documentTypes</td>
+                                    <td>No</td>
+                                    <td>List of document types (or templates) associated with this document list.</td>
+                                    <td>string</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>enablePublishing</td>
+                                    <td>Yes</td>
+                                    <td>If true, publishing of draft documents in this document list is enabled for the site. If false, all document changes are immediately published in live mode.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>listFQN</td>
+                                    <td>No</td>
+                                    <td>Fully qualified name of the document list.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>metadata</td>
+                                    <td>No</td>
+                                    <td>Full metadata for the document list.</td>
+                                    <td>Json</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>The name of the document list.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>namespace</td>
+                                    <td>No</td>
+                                    <td>Namespace associated with this extensible attribute. </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>scopeId</td>
+                                    <td>Yes</td>
+                                    <td>Id for the type of user role scope for authorized and supported capabilities in the system per user account.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>scopeType</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Type of user role scope for authorized and supported capabilities in the system per user account.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>security</td>
+                                    <td>No</td>
+                                    <td>Security data for accessing and updating the document list.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>supportsPublishing</td>
+                                    <td>Yes</td>
+                                    <td>If true, documents in this list can be saved as drafts until they are published to the site. If false, all document changes are immediately published in live mode. System-supplied and read only.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>usages</td>
+                                    <td>No</td>
+                                    <td>Support usage of the document list through Mozu.</td>
+                                    <td>string</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>views</td>
+                                    <td>No</td>
+                                    <td>Supported views for the document list.</td>
+                                    <td>View</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Content.Contracts.DocumentListCollection
+	</h1>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Paged collection of the document lists. When requesting all document lists, the item array includes JSON for all matching documents.</p>
+                                    </td>
+                                    <td>DocumentList</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the maximum amount of pages to return. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the amount of items per page. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the page to start for the paged retrieved JSON. The default starts at 0. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Content.Contracts.DocumentListType
+	</h1>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>defaultDocuments</td>
+                                    <td>No</td>
+                                    <td>List of default documents for the document list type.</td>
+                                    <td>DocumentInstallation</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>documentListTypeFQN</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Fully qualified name for the content document type (or template).</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>documentTypeFQNs</td>
+                                    <td>No</td>
+                                    <td>List of the document type fully qualified names.</td>
+                                    <td>string</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>enablePublishing</td>
+                                    <td>Yes</td>
+                                    <td>If true, publishing of draft documents in this document list is enabled for the site. If false, all document changes are immediately published in live mode. </td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>installationPackage</td>
+                                    <td>No</td>
+                                    <td>The package of document lists and content documents to be installed.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>localizationType</td>
+                                    <td>No</td>
+                                    <td>The localization type for the document list type.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>metadata</td>
+                                    <td>No</td>
+                                    <td>The metadata for the document list type.</td>
+                                    <td>Json</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>The name of the document list type.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>namespace</td>
+                                    <td>No</td>
+                                    <td>Namespace associated with this extensible attribute. </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>scopeType</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Type of user role scope for authorized and supported capabilities in the system per user account.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>security</td>
+                                    <td>No</td>
+                                    <td>The security access data for managing the document list type.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>supportsPublishing</td>
+                                    <td>No</td>
+                                    <td>If true, changes documents in this list can be saved as drafts until they are published to the site. If false, all document changes are immediately published in live mode. System-supplied and read only. </td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>usages</td>
+                                    <td>No</td>
+                                    <td>The supported usage options for the document list type in the site.</td>
+                                    <td>string</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>version</td>
+                                    <td>No</td>
+                                    <td>The version of the document list.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>views</td>
+                                    <td>No</td>
+                                    <td>The supported views for the document list type in the site.</td>
+                                    <td>View</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Content.Contracts.DocumentType
+	</h1>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>adminName</td>
+                                    <td>No</td>
+                                    <td>Name of this extensible attribute defined in Mozu Admin. </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>documentTypeFQN</td>
+                                    <td>No</td>
+                                    <td>Fully qualified name of the document type.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>installationPackage</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The package of document lists and content documents to be installed.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>metadata</td>
+                                    <td>No</td>
+                                    <td>The metadata for the document type.</td>
+                                    <td>Json</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>The name of the document type.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>namespace</td>
+                                    <td>No</td>
+                                    <td>Namespace associated with this extensible attribute. </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>properties</td>
+                                    <td>No</td>
+                                    <td>The list of property values for the document type object.</td>
+                                    <td>Property</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>version</td>
+                                    <td>No</td>
+                                    <td>The version of the document type.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Content.Contracts.DocumentTypeCollection
+	</h1>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Paged collection of content document types in the document collection. When requesting all contract content document types, the item array includes JSON for all matching documents.</p>
+                                    </td>
+                                    <td>DocumentType</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the maximum amount of pages to return. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the amount of items per page. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the page to start for the paged retrieved JSON. The default starts at 0. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Content.Contracts.Facet
+	</h1>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>count</td>
+                                    <td>No</td>
+                                    <td>The number of facet results.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>The name of the facet.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Content.Contracts.Folder
+	</h1>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>documentListName</td>
+                                    <td>No</td>
+                                    <td>The name of the document list that contains the folder.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>No</td>
+                                    <td>Unique identifier of the folder.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>The name of the folder.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>parentId</td>
+                                    <td>No</td>
+                                    <td>If applicable, the parent folder that contains this folder.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>path</td>
+                                    <td>No</td>
+                                    <td>The content path associated with the folder.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Content.Contracts.FolderCollection
+	</h1>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Paged collection of folders in the document hierarchy. When requesting all folders, the item array includes JSON for all matching documents.</p>
+                                    </td>
+                                    <td>Folder</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the maximum amount of pages to return. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the amount of items per page. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the page to start for the paged retrieved JSON. The default starts at 0. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Content.Contracts.FolderTree
+	</h1>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>children</td>
+                                    <td>No</td>
+                                    <td>The subfolders contained within a folder, creating a hierarchy of documents.</td>
+                                    <td>FolderTree</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>folder</td>
+                                    <td>No</td>
+                                    <td>The name of the folder.</td>
+                                    <td>Folder</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Content.Contracts.Property
+	</h1>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>isMultiValued</td>
+                                    <td>No</td>
+                                    <td>If true, the property type has several values. If false, the property type can only have one value. </td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isRequired</td>
+                                    <td>No</td>
+                                    <td>Identifies if the property is required. If true, the property is required in a request to return a valid response.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>The name of the property.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>propertyType</td>
+                                    <td>No</td>
+                                    <td>The property type.</td>
+                                    <td>PropertyType</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Content.Contracts.PropertyType
+	</h1>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>adminName</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Name of this extensible attribute defined in Mozu Admin. </p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>dataType</td>
+                                    <td>No</td>
+                                    <td>The data type for this property.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>installationPackage</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The package of document lists and content documents to be installed.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isAggregatable</td>
+                                    <td>Yes</td>
+                                    <td>If true, this entity can be grouped.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isQueryable</td>
+                                    <td>Yes</td>
+                                    <td>If true, the entity can be searched. If false, the entity cannot be searched.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isSortable</td>
+                                    <td>Yes</td>
+                                    <td>If true, the property type results are sortable. If false, the property type results cannot be sorted by any options.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>The name of the content property type.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>namespace</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Namespace associated with this extensible attribute. </p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>propertyTypeFQN</td>
+                                    <td>No</td>
+                                    <td>Fully qualified name for the property type.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>version</td>
+                                    <td>No</td>
+                                    <td>The version number for the property type.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Content.Contracts.PropertyTypeCollection
+	</h1>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Paged collection of property types for the content. When requesting all property tyes, the item array includes JSON for all matching data.</p>
+                                    </td>
+                                    <td>PropertyType</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the maximum amount of pages to return. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the amount of items per page. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the page to start for the paged retrieved JSON. The default starts at 0. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Content.Contracts.R4.Document
+	</h1>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>contentLength</td>
+                                    <td>No</td>
+                                    <td>The length of the document's content.</td>
+                                    <td>long</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>contentMimeType</td>
+                                    <td>No</td>
+                                    <td>The Mime type of the document.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>contentUpdateDate</td>
+                                    <td>Yes</td>
+                                    <td>The latest date and time the document content was updated.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>documentListName</td>
+                                    <td>No</td>
+                                    <td>The name of the document list this document is a member of.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>documentType</td>
+                                    <td>No</td>
+                                    <td>The document type for this document.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>extension</td>
+                                    <td>No</td>
+                                    <td>The file type extension.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>No</td>
+                                    <td>The system generated unique ID&#160;of this document.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>insertDate</td>
+                                    <td>Yes</td>
+                                    <td>Indicates if the date should be included in the document content when published and viewed.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>The name of the document.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>properties</td>
+                                    <td>No</td>
+                                    <td>The property data for the document. This may include one or more properties.</td>
+                                    <td>PropertyValue</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>publishState</td>
+                                    <td>No</td>
+                                    <td>The current state of the document as published or not.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>updateDate</td>
+                                    <td>Yes</td>
+                                    <td>The latest date and time the document was updated.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Content.Contracts.R4.DocumentCollection
+	</h1>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Paged collection of document files. When requesting all documents, the item array includes JSON for all matching documents.</p>
+                                    </td>
+                                    <td>Document</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the maximum amount of pages to return. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the amount of items per page. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the page to start for the paged retrieved JSON. The default starts at 0. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Content.Contracts.R4.PropertyValue
+	</h1>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>propertyType</td>
+                                    <td>No</td>
+                                    <td>The type for this property.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>value</td>
+                                    <td>No</td>
+                                    <td>The value of the property.</td>
+                                    <td>object</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Content.Contracts.View
+	</h1>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>defaultSort</td>
+                                    <td>No</td>
+                                    <td>Sets the default sort for the content in this view.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>fields</td>
+                                    <td>No</td>
+                                    <td>The list of fields to display for the content in this view.</td>
+                                    <td>ViewField</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>filter</td>
+                                    <td>No</td>
+                                    <td>The filtering for the content in this view.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>metadata</td>
+                                    <td>No</td>
+                                    <td>The metadata for the contract view.</td>
+                                    <td>Json</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>The name for the content view.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>security</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The security access data for the view.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>usages</td>
+                                    <td>No</td>
+                                    <td>The supported usages of the view.</td>
+                                    <td>string</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Content.Contracts.ViewField
+	</h1>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>isQueryable</td>
+                                    <td>No</td>
+                                    <td>Indicates if the field in the view can be queried and returned.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isSortable</td>
+                                    <td>No</td>
+                                    <td>Indicates if the field in the view is sortable.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>The name of the field in the view.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>target</td>
+                                    <td>No</td>
+                                    <td>The target object for the field in the view.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>No</td>
+                                    <td>The type of field.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mozu Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer__logo"><a href="http://www.mozu.com" target="_blank"><img src="http://www.mozu.com/sites/all/themes/mozu_aurora/logo.png" style="padding-top: 7px;" /></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                    </div>
+                    <div class="col-md-3">
+                        <p class="pull-right footer__icons"><a href="https://twitter.com/MozuCommerce"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-twitter"></i></button></a><a href="http://developer.mozu.com/tools" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-code-fork"></i></button></a><a href="http://www.mozu.com/contact"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-comments-o"></i></button></a><a href="http://www.mozu.com/legal"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-copyright"></i></button></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Required for Scrollspy/Affix/Bootstrap -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js">
+        </script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/scrollspy.js">
+        </script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/affix.js">
+        </script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js">
+        </script>
+        <script src="../Resources/Javascript/affix-dynamic.js">
+        </script>
+        <!-- Scrollspy active link script -->
+        <script>/* <![CDATA[ */
+
+			$( document ).ready(function() {
+			$('body').scrollspy({
+			target: '.bs-docs-sidebar',
+			offset: 20
+			});
+			}); 
+		
+		/* ]]> */</script>
+        <!-- Affix for sidebar -->
+        <!-- Toggler Script for expand/collapse sidebar -->
+        <script>/* <![CDATA[ */
+		$(document).ready(function(){
+
+		$("#toggler").click(function(){
+		$(this).toggleClass('active, inactive');
+			})
+		})
+		/* ]]> */</script>
+    </body>
+</html>

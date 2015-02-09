@@ -1,0 +1,2265 @@
+<!DOCTYPE html>
+<html data-mc-runtime-file-type="Topic" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <!-- Dev Center Masterpage - multiple page sidebar, topic via proxy, footer across all -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Mozu" />
+        <meta name="description" content="Dev Center online help documentation." />
+        <meta name="keywords" content="Mozu, Dev Center, developer, help" />
+        <link rel="shortcut icon" href="http://developer.mozu.com/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" /><title>
+		Mozu.Customer.Contracts.AddressValidationRequest
+	</title>
+        <!-- Mozu CSS -->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries. Again, you should technically remove "http:"; however, doing so increases Flare's build time on the oder of HOURS. -->
+        <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+		<![endif]-->
+        <!-- Insert Google Analytics Here -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/mozu-bootswatch-api.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="main">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button><a class="navbar-brand" href="index.htm"> <img src="../Resources/MasterPages/BootstrapSource/icon_mozu_red_m.png" style="margin-top: -9px;" /></a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                    <div class="navbar-collapse collapse">
+                        <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li value="1"><a href="http://developer.mozu.com/">Dev Center</a>
+                            </li>
+                            <li value="2"><a href="http://developer.mozu.com/api">Mozu API</a>
+                            </li>
+                            <li value="3"><a href="http://developer.mozu.com/learn">Mozu Learn</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!-- <div class="divide-nav" role="navigation">
+                <div class="container"> <MadCap:breadcrumbsProxy /> </div>
+            </div> -->
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3" style="margin-top: 60px;">
+                        <nav class="bs-docs-sidebar">
+                            <!--Side Bar Multipage -->
+                            <ul class="nav nav-stacked">
+                                <div class="side-heading">List of Mozu Tables</div>
+                                <li value="2"><a href="adminuser-tables.htm">AdminUser Tables</a>
+                                </li>
+                                <li value="3"><a href="appdev-tables.htm">AppDev Tables</a>
+                                </li>
+                                <li value="4"><a href="commerceruntime-tables.htm">CommerceRuntime Tables</a>
+                                </li>
+                                <li value="5"><a href="content-tables.htm">Content Tables</a>
+                                </li>
+                                <li value="6"><a href="core-api-tables.htm">Core API Tables</a>
+                                </li>
+                                <li value="7"><a href="extensible-tables.htm">Core Extensible Tables</a>
+                                </li>
+                                <li value="8"><a href="thirdparty-tables.htm">Core ThirdParty Tables</a>
+                                </li>
+                                <li value="9"><a href="#">Customer Tables</a>
+                                </li>
+                                <li value="10"><a href="event-tables.htm">Event Tables</a>
+                                </li>
+                                <li value="11"><a href="installedapps-tables.htm">InstalledApplications Tables</a>
+                                </li>
+                                <li value="12"><a href="location-tables.htm">Location Tables</a>
+                                </li>
+                                <li value="13"><a href="paymentsvc-tables.htm">PaymentService Tables</a>
+                                </li>
+                                <li value="14"><a href="pricingruntime-tables.htm">PricingRuntime Tables</a>
+                                </li>
+                                <li value="15"><a href="productadmin-tables.htm">ProductAdmin Tables</a>
+                                </li>
+                                <li value="16"><a href="productruntime-tables.htm">ProductRuntime Tables</a>
+                                </li>
+                                <li value="17"><a href="reference-tables.htm">Reference Tables</a>
+                                </li>
+                                <li value="18"><a href="shippingruntime-tables.htm">ShippingRuntime Tables</a>
+                                </li>
+                                <li value="19"><a href="sitesettings-general-tables.htm">SiteSettings General Tables</a>
+                                </li>
+                                <li value="20"><a href="sitesettings-order-tables.htm">SiteSettings Order Tables</a>
+                                </li>
+                                <li value="21"><a href="sitesettings-shipping-tables.htm">SiteSettings Shipping Tables</a>
+                                </li>
+                                <li value="22"><a href="../../Tonzof/tenants-tables.htm">Tenants Shipping Tables</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-9 content">
+                        <!-- Flare topic compiler -->
+                        <h1>
+		Mozu.Customer.Contracts.AddressValidationRequest
+	</h1>
+                        <p>
+		Properties of the address to validate.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>address</td>
+                                    <td>No</td>
+                                    <td>Properties of the address to validate.</td>
+                                    <td>Address</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.AddressValidationResponse
+	</h1>
+                        <p>
+		Array list of possible valid address matches based on the entry supplied in the request.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>addressCandidates</td>
+                                    <td>No</td>
+                                    <td>Array list of possible valid address matches based on the entry supplied in the request.</td>
+                                    <td>Address</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.Card
+	</h1>
+                        <p>
+		Properties of a credit card used to submit payment for an order.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cardNumberPart</td>
+                                    <td>No</td>
+                                    <td>The masked credit card number part returned from the payment gateway.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>cardType</td>
+                                    <td>No</td>
+                                    <td>The type of credit card, such as Visa or Amex.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>contactId</td>
+                                    <td>No</td>
+                                    <td>Unique identifier of the customer account contact associated with the credit card.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>expireMonth</td>
+                                    <td>Yes</td>
+                                    <td>The two-digit month the credit card expires.</td>
+                                    <td>short</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>expireYear</td>
+                                    <td>Yes</td>
+                                    <td>The four-digit year the credit card expires.</td>
+                                    <td>short</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>No</td>
+                                    <td>Unique ID of the credit card for the customer account. This identifier is separate from the credit card number.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>nameOnCard</td>
+                                    <td>No</td>
+                                    <td>The name printed on the credit card.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.CardCollection
+	</h1>
+                        <p>
+		Collection of credit cards defined for the customer account.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>A collection of card objects, returned as an array of items.</td>
+                                    <td>Card</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>The calculated total count of returned items in the collection.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.CommerceSummary
+	</h1>
+                        <p>
+		Properties of the commerce summary associated with a customer account, which includes details about the shopper's most recent order, wish lists, and total order value over time.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>lastOrderDate</td>
+                                    <td>Yes</td>
+                                    <td>The date and time the shopper last submitted an order for any site associated with the tenant.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>orderCount</td>
+                                    <td>No</td>
+                                    <td>The total number of order the shopper submitted across all sites associated with the tenant.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalOrderAmount</td>
+                                    <td>No</td>
+                                    <td>The aggregate total amount of all orders the shopper submitted, across all sites associated with the tenant.</td>
+                                    <td>CurrencyAmount</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>visitsCount</td>
+                                    <td>No</td>
+                                    <td>The number of visits to a site associated with a customer account.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>wishlistCount</td>
+                                    <td>No</td>
+                                    <td>The number of wish lists associated with a customer account. This number represents the total number of a shopper's wish lists across all sites associated with a tenant.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.ConfirmationInfo
+	</h1>
+                        <p>Properties of the confirmation information provided for a customer account.</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>confirmationCode</td>
+                                    <td>No</td>
+                                    <td>The confirmation code to enter for the newly created customer account.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>newPassword</td>
+                                    <td>No</td>
+                                    <td>The new password for the account, generated when the account is created.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>userName</td>
+                                    <td>No</td>
+                                    <td>The user name for logging in.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.ContactType
+	</h1>
+                        <p>
+		Properties of a type of contact associated with a customer account, such as Billing or Fulfillment.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>isPrimary</td>
+                                    <td>No</td>
+                                    <td>If true, this is the primary contact of this contact type.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>The name of this contact type.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.Credit.Credit
+	</h1>
+                        <p>
+		Properties of the store credit of gift card applied to a customer account. At this time, gift card functionality is reserved for future use.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>activationDate</td>
+                                    <td>Yes</td>
+                                    <td>The date and time the store credit or gift card was activated by the shopper. Credits cannot be used until activated. After the credit is activated, this property value is read-only.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>auditInfo</td>
+                                    <td>No</td>
+                                    <td>Audit information for adding credit via store credit or a gift card. The information includes the account adding the credit, date, and time.</td>
+                                    <td>AuditInfo</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>code</td>
+                                    <td>No</td>
+                                    <td>User-defined identifier of the credit, which is unique within the tenant.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>creditType</td>
+                                    <td>No</td>
+                                    <td>The type of customer credit, which is "GiftCard" or "StoreCredit".</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>currencyCode</td>
+                                    <td>No</td>
+                                    <td>The currency code for the monetary amount. </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>currentBalance</td>
+                                    <td>No</td>
+                                    <td>The current remaining balance of the credit applied to the customer account.</td>
+                                    <td>decimal</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>customerId</td>
+                                    <td>Yes</td>
+                                    <td>Unique identifier of the shopper associated with the applied credit. For gift cards, this property is not required.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>expirationDate</td>
+                                    <td>Yes</td>
+                                    <td>The date and time the credit expires and can no longer be redeemed.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>initialBalance</td>
+                                    <td>No</td>
+                                    <td>The initial balance of the credit applied to the customer account. This value cannot be changed after it is set.</td>
+                                    <td>decimal</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.Credit.CreditAuditEntry
+	</h1>
+                        <p>
+		Properties of an audit entry logged for a store credit or gift card.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>activityType</td>
+                                    <td>No</td>
+                                    <td>The type of activity associated with the audit entry. Possible values are: Created, Updated, Deleted, Activated, Deactivated, or Transaction.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>auditInfo</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Audit information for adding credit via store credit or a gift card. The information includes the account adding the credit, date, and time.</p>
+                                    </td>
+                                    <td>AuditInfo</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>details</td>
+                                    <td>No</td>
+                                    <td>Detail log that describes the activity performed for this credit audit entry.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.Credit.CreditAuditEntryCollection
+	</h1>
+                        <p>
+		Paged list of audit entries associated with a customer's store credit or gift card.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>Paged collection of credit audit entries, returned as an array of items.</td>
+                                    <td>CreditAuditEntry</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the maximum amount of pages to return. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the amount of items per page. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the page to start for the paged retrieved JSON. The default starts at 0. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Customer.Contracts.Credit.CreditCollection
+	</h1>
+                        <p>
+		Paged list of store credits and gift cards defined for a customer account.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Paged collection of credit entries, returned as an array of items.</p>
+                                    </td>
+                                    <td>Credit</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the maximum amount of pages to return. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the amount of items per page. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the page to start for the paged retrieved JSON. The default starts at 0. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.Credit.CreditTransaction
+	</h1>
+                        <p>
+		Properties of a transaction performed for a customer credit that update the remaining balance of the credit.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>auditInfo</td>
+                                    <td>No</td>
+                                    <td>Audit data for a credit transaction, including the user account, date, and time that provided the content and updates.</td>
+                                    <td>AuditInfo</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>comments</td>
+                                    <td>No</td>
+                                    <td>Comments entered for a transaction. Depending on the interface, these comments might be visible to authorized shoppers and users.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>Yes</td>
+                                    <td>Unique identifier of the customer credit transaction.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>impactAmount</td>
+                                    <td>Yes</td>
+                                    <td>The amount to apply to the credit balance. The defined transaction type determines whether this amount represents a positive or negative integer.</td>
+                                    <td>decimal</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>transactionType</td>
+                                    <td>No</td>
+                                    <td>The type of transaction to perform for the customer credit. To decrease the balance, set this parameter to "Debit". To increase the balance, set this parameter to "Credit".</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.Credit.CreditTransactionCollection
+	</h1>
+                        <p>
+		Paged list of transactions associated with a customer credit.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>Paged collection of credit transaction data entries, returned as an array of items.</td>
+                                    <td>CreditTransaction</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the maximum amount of pages to return. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the amount of items per page. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the page to start for the paged retrieved JSON. The default starts at 0. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.CurrencyAmount
+	</h1>
+                        <p>
+		The currency code and the total monetary sum of the order. Currently, only USD is supported.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>amount</td>
+                                    <td>No</td>
+                                    <td>The monetary amount in the specified currency locale code.</td>
+                                    <td>decimal</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>currencyCode</td>
+                                    <td>No</td>
+                                    <td>The currency code for the monetary amount.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.CustomerAccount
+	</h1>
+                        <p>
+		Properties of the customer account.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>acceptsMarketing</td>
+                                    <td>No</td>
+                                    <td>If true, the customer prefers to receive marketing material such as newsletters or email offers.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>attributes</td>
+                                    <td>No</td>
+                                    <td>Collection of customer account attributes.</td>
+                                    <td>CustomerAttribute</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>auditInfo</td>
+                                    <td>No</td>
+                                    <td>Audit data including the user, date, and time of entering and updating data for the customer account.</td>
+                                    <td>AuditInfo</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>commerceSummary</td>
+                                    <td>No</td>
+                                    <td>Properties of the commerce summary associated with a customer account, which includes details about the shopper's most recent order, wish lists, and total order value over time.</td>
+                                    <td>CommerceSummary</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>companyOrOrganization</td>
+                                    <td>No</td>
+                                    <td>The name of the company or organization for the customer account. Optional.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>contacts</td>
+                                    <td>No</td>
+                                    <td>Contact information, including the contact's name, address, phone numbers, email addresses, and company (if supplied). Also indicates whether this is a billing, shipping, or billing and shipping contact.</td>
+                                    <td>CustomerContact</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>emailAddress</td>
+                                    <td>No</td>
+                                    <td>The email address associated with the customer account.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>externalId</td>
+                                    <td>No</td>
+                                    <td>Unique identifier an external system uses to identify this customer account.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>firstName</td>
+                                    <td>No</td>
+                                    <td>The first name associated with the customer account.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>No</td>
+                                    <td>Identifier of the entity.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isAnonymous</td>
+                                    <td>No</td>
+                                    <td>If true, this customer account represents an anonymous shopper.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>lastName</td>
+                                    <td>No</td>
+                                    <td>The last name associated with the customer account.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>localeCode</td>
+                                    <td>No</td>
+                                    <td>The 2 letter country code that sets the locale for translations and more.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>notes</td>
+                                    <td>No</td>
+                                    <td>List of customer account notes.</td>
+                                    <td>CustomerNote</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>segments</td>
+                                    <td>No</td>
+                                    <td>List of customer segments associated with the customer account. Customer accounts can be members of any number of segments.</td>
+                                    <td>CustomerSegment</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>taxExempt</td>
+                                    <td>No</td>
+                                    <td>If true, this customer account has tax exempt status.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>taxId</td>
+                                    <td>No</td>
+                                    <td>The tax identification number associated with the customer account.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>userId</td>
+                                    <td>No</td>
+                                    <td>Unique identifier of the user associated with the customer account. All customer accounts must have a defined user ID. If the shopper user is anonymous, the user ID represents a system-generated user ID string.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>userName</td>
+                                    <td>No</td>
+                                    <td>The user name of the user associated with the customer account.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.CustomerAccountAndAuthInfo
+	</h1>
+                        <p>
+		The authentication information associated with a customer account.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>account</td>
+                                    <td>No</td>
+                                    <td>The unique identifier of the customer account.</td>
+                                    <td>CustomerAccount</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isImport</td>
+                                    <td>No</td>
+                                    <td>If true, this customer account and its associated data was imported from an external source.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>password</td>
+                                    <td>No</td>
+                                    <td>The password required to authenticate this customer account.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.CustomerAccountCollection
+	</h1>
+                        <p>
+		Paged list of customer accounts sorted and filtered by any query parameters specified in the request.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>Paged collection of customer account objects, returned as an array of items.</td>
+                                    <td>CustomerAccount</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the maximum amount of pages to return. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the amount of items per page. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the page to start for the paged retrieved JSON. The default starts at 0. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.CustomerAttribute
+	</h1>
+                        <p>
+		Properties of an attribute associated with a customer account.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>attributeDefinitionId</td>
+                                    <td>Yes</td>
+                                    <td>Unique identifier of the attribute definition.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>auditInfo</td>
+                                    <td>No</td>
+                                    <td>Audit data including the user, date, and time of entering and updating data for the customer attribute.</td>
+                                    <td>AuditInfo</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>fullyQualifiedName</td>
+                                    <td>No</td>
+                                    <td>The fully qualified name of the customer attribute.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>values</td>
+                                    <td>No</td>
+                                    <td>List of values for the attribute.</td>
+                                    <td>object</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.CustomerAttributeCollection
+	</h1>
+                        <p>
+		Collection of customer account attributes.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>Paged collection of customer attribute data objects, returned as an array of items.</td>
+                                    <td>CustomerAttribute</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the maximum amount of pages to return. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the amount of items per page. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the page to start for the paged retrieved JSON. The default starts at 0. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.CustomerAuthTicket
+	</h1>
+                        <p>
+		Properties of an authentication ticket generated for a customer account.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>accessToken</td>
+                                    <td>No</td>
+                                    <td>Access token string that enables authentication for the customer account.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>accessTokenExpiration</td>
+                                    <td>No</td>
+                                    <td>The date and time the access token expires.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>customerAccount</td>
+                                    <td>No</td>
+                                    <td>Properties of the customer account associated with the authentication ticket.</td>
+                                    <td>CustomerAccount</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>refreshToken</td>
+                                    <td>No</td>
+                                    <td>Refresh token string used to generate a new access token after expiration for a customer account authentication ticket.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>refreshTokenExpiration</td>
+                                    <td>No</td>
+                                    <td>The date and time the refresh token expires.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>userId</td>
+                                    <td>No</td>
+                                    <td>User ID associated with the customer account authentication ticket.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.CustomerContact
+	</h1>
+                        <p>
+		Contact information, including the contact's name, address, phone numbers, email addresses, and company (if supplied). Also indicates whether this is a billing, shipping, or billing and shipping contact.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>accountId</td>
+                                    <td>No</td>
+                                    <td>Unique identifier of the customer account.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>address</td>
+                                    <td>No</td>
+                                    <td>Address associated with the customer account contact.</td>
+                                    <td>Address</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>auditInfo</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Audit data including the user, date, and time of entering and updating data for the customer contact.</p>
+                                    </td>
+                                    <td>AuditInfo</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>companyOrOrganization</td>
+                                    <td>No</td>
+                                    <td>The name of the company or organization of the customer contact.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>email</td>
+                                    <td>No</td>
+                                    <td>The email address of the customer contact.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>faxNumber</td>
+                                    <td>No</td>
+                                    <td>The fax number associated with the customer account.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>firstName</td>
+                                    <td>No</td>
+                                    <td>First name of the customer contact.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>No</td>
+                                    <td>Identifier of the customer contact.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>label</td>
+                                    <td>No</td>
+                                    <td>The label for the customer contact.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>lastNameOrSurname</td>
+                                    <td>No</td>
+                                    <td>Last name or surname of the customer contact.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>middleNameOrInitial</td>
+                                    <td>No</td>
+                                    <td>Middle name or initial.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>phoneNumbers</td>
+                                    <td>No</td>
+                                    <td>List of phone numbers associated with the customer account contact.</td>
+                                    <td>Phone</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>types</td>
+                                    <td>No</td>
+                                    <td>List of the types associated with a customer contact, such as Billing or Fulfillment.</td>
+                                    <td>ContactType</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.CustomerContactCollection
+	</h1>
+                        <p>
+		Paged list of contact information for a specified customer account.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>Paged collection of customer contact objects, returned as an array of items.</td>
+                                    <td>CustomerContact</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the maximum amount of pages to return. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the amount of items per page. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the page to start for the paged retrieved JSON. The default starts at 0. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.CustomerLoginInfo
+	</h1>
+                        <p>
+		The login information for a customer account.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>emailAddress</td>
+                                    <td>No</td>
+                                    <td>The email address associated with the customer login.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isImport</td>
+                                    <td>Yes</td>
+                                    <td>If true, this customer account data was imported from an external program.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>password</td>
+                                    <td>No</td>
+                                    <td>The password associated with the customer login.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>username</td>
+                                    <td>No</td>
+                                    <td>The user name associated with the customer login.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.CustomerNote
+	</h1>
+                        <p>
+		Properties of a note configured for a customer account.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>auditInfo</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Audit data including the user, date, and time of entering and updating data for the customer account.</p>
+                                    </td>
+                                    <td>AuditInfo</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>content</td>
+                                    <td>No</td>
+                                    <td>The contents of a customer account note.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>No</td>
+                                    <td>Identifier of the customer account note.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.CustomerNoteCollection
+	</h1>
+                        <p>
+		Collection of notes for a customer account.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>Paged collection of customer account notation objects, returned as an array of items.</td>
+                                    <td>CustomerNote</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the maximum amount of pages to return. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the amount of items per page. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the page to start for the paged retrieved JSON. The default starts at 0. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.CustomerSegment
+	</h1>
+                        <p>
+		The Customer Segment object includes properties of a defined customer segment used to group customer accounts.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>auditInfo</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Audit data including the user, date, and time of entering and updating data for the customer segment.</p>
+                                    </td>
+                                    <td>AuditInfo</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>code</td>
+                                    <td>No</td>
+                                    <td>The user-defined code assigned for the customer segment.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>description</td>
+                                    <td>No</td>
+                                    <td>Description of the customer segment.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>No</td>
+                                    <td>Unique identifier of the customer segment. System-supplied and read only.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>Name of the customer segment.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.CustomerSegmentCollection
+	</h1>
+                        <p>
+		Paged list of customer segments.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>Paged collection of customer segment objects, returned as an array of items.</td>
+                                    <td>CustomerSegment</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the maximum amount of pages to return. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the amount of items per page. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the page to start for the paged retrieved JSON. The default starts at 0. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.CustomerUserAuthInfo
+	</h1>
+                        <p>
+		The authentication information required to generate an authentication ticket for a customer account.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>password</td>
+                                    <td>No</td>
+                                    <td>The password of the user associated with the customer account.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>username</td>
+                                    <td>No</td>
+                                    <td>The user name of the user associated with the customer account.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.InStockNotificationSubscription
+	</h1>
+                        <p>
+		Properties of a push notification to which the shopper subscribes. This notification sends the shopper an alert when a new product or a product previously out of stock becomes available in the specified location's active product inventory.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>auditInfo</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Audit data including the user, date, and time of entering and updating data for the in-stock notification subscription.</p>
+                                    </td>
+                                    <td>AuditInfo</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>customerId</td>
+                                    <td>Yes</td>
+                                    <td>Unique identifier of the customer associated with the in-stock notification subscription.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>email</td>
+                                    <td>No</td>
+                                    <td>The customer account email address subscribed to receive these notifications.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>Yes</td>
+                                    <td>Unique identifier of the customer in-stock notification subscription.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>locationCode</td>
+                                    <td>No</td>
+                                    <td>Tenant-defined code that identifies the customer in-stock notification subscription.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>productCode</td>
+                                    <td>No</td>
+                                    <td>The product code of the product with new stock, to send in the notification.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.InStockNotificationSubscriptionCollection
+	</h1>
+                        <p>
+		Collection of push notifications to which the shopper subscribes.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>Paged collection of in-stock notification subscription objects, returned as an array of items.</td>
+                                    <td>InStockNotificationSubscription</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the maximum amount of pages to return. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the amount of items per page. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the page to start for the paged retrieved JSON. The default starts at 0. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.LoginState
+	</h1>
+                        <p>
+		Properties of the login state of a customer account.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>createdOn</td>
+                                    <td>Yes</td>
+                                    <td>The date and time the object was created on.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>failedLoginAttemptCount</td>
+                                    <td>No</td>
+                                    <td>The total number of times the customer account has unsuccessfully attempted to log in.</td>
+                                    <td>byte</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>firstFailedLoginAttemptOn</td>
+                                    <td>Yes</td>
+                                    <td>The date and time the customer's first unsuccessful attempt to log in was recorded.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isLocked</td>
+                                    <td>No</td>
+                                    <td>If true, the customer account is locked and the customer cannot log in.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isPasswordChangeRequired</td>
+                                    <td>No</td>
+                                    <td>If true, the customer account user must change the password for the account.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>lastLockedOn</td>
+                                    <td>Yes</td>
+                                    <td>The date and time the customer account was most recently locked.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>lastLoginOn</td>
+                                    <td>Yes</td>
+                                    <td>The date and time the customer account last logged in.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>lastPasswordChangeOn</td>
+                                    <td>Yes</td>
+                                    <td>The date and the time the user associated with the customer account last changed the account password.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>remainingLoginAttempts</td>
+                                    <td>No</td>
+                                    <td>The remaining number of login attempts the customer can perform before the system locks the customer account.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>updatedOn</td>
+                                    <td>Yes</td>
+                                    <td>The date and time the object was updated on.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.PasswordInfo
+	</h1>
+                        <p>
+		The information required to modify a shopper account password.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>newPassword</td>
+                                    <td>No</td>
+                                    <td>The new account password value.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>oldPassword</td>
+                                    <td>No</td>
+                                    <td>The previous shopper account password value.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.ResetPasswordInfo
+	</h1>
+                        <p>
+		Information required to reset the password for a customer account.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>emailAddress</td>
+                                    <td>No</td>
+                                    <td>The email address to sent the new password email to.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>userName</td>
+                                    <td>No</td>
+                                    <td>User name of the user associated with the customer account.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.Transaction
+	</h1>
+                        <p>
+		Properties of a transaction performed by a customer account. The system creates a transaction each time the customer submits an order, returns an item, picks up items for an order, or manages items on a wish list.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>amount</td>
+                                    <td>No</td>
+                                    <td>If applicable, the amount of the transaction.</td>
+                                    <td>decimal</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>currencyCode</td>
+                                    <td>No</td>
+                                    <td>The currency code for the monetary amount.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>date</td>
+                                    <td>No</td>
+                                    <td>The date and time the customer transaction occurred.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>interactionType</td>
+                                    <td>No</td>
+                                    <td>The type of interaction the customer used to perform the transaction, which is "Website," "Call," "Store," or "Unknown."</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>transactionId</td>
+                                    <td>No</td>
+                                    <td>The unique identifier of the transaction.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>transactionType</td>
+                                    <td>No</td>
+                                    <td>The type of transaction the customer performed, which is "Order," "Return," "OrderPickup," or "Wishlist."</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>visitId</td>
+                                    <td>No</td>
+                                    <td>Unique identifier of the customer visit associated with the transaction. Customers can perform multiple transactions in the same visit.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.Visit
+	</h1>
+                        <p>
+		Properties of a customer visit to one of a company's sites.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>accountId</td>
+                                    <td>Yes</td>
+                                    <td>Unique identifier of the customer account associated with the visit.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>browserLocationCode</td>
+                                    <td>No</td>
+                                    <td>If the customer visit is made online, the location code associated with the website visited.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>date</td>
+                                    <td>No</td>
+                                    <td>The date and time of the customer visit.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>No</td>
+                                    <td>Unique identifier of the customer visit.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>locationCode</td>
+                                    <td>No</td>
+                                    <td>If the customer visit is made in person and associated with a defined location, the code that identifies the location.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>transactions</td>
+                                    <td>No</td>
+                                    <td>Array list of transactions the customer performed during the visit. A customer can perform multiple transactions in a single visit, or the visit can have no associated transactions.</td>
+                                    <td>Transaction</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>No</td>
+                                    <td>The type of customer visit, which is "Website," "Store," "Call," or "Unknown."</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>userId</td>
+                                    <td>No</td>
+                                    <td>The user ID of the customer who visited the site.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>webReferrer</td>
+                                    <td>No</td>
+                                    <td>The HTTP_Referrer that initiatied the visit started. If the shopper was not referred from another source, this value is null.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>webSessionId</td>
+                                    <td>No</td>
+                                    <td>If the visit was made online, the identifier of the web session associated with the visit, which is system-supplied and read only.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>webSiteId</td>
+                                    <td>Yes</td>
+                                    <td>The id of the website.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>webUserAgent</td>
+                                    <td>No</td>
+                                    <td>The user agent string for the browser.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1>
+		Mozu.Customer.Contracts.VisitCollection
+	</h1>
+                        <p>
+		Paged collection of customer visits.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>Paged collection of visit objects, returned as an array of items.</td>
+                                    <td>Visit</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the maximum amount of pages to return. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the amount of items per page. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Sets the page to start for the paged retrieved JSON. The default starts at 0. Example: 10.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mozu Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer__logo"><a href="http://www.mozu.com" target="_blank"><img src="http://www.mozu.com/sites/all/themes/mozu_aurora/logo.png" style="padding-top: 7px;" /></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                    </div>
+                    <div class="col-md-3">
+                        <p class="pull-right footer__icons"><a href="https://twitter.com/MozuCommerce"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-twitter"></i></button></a><a href="http://developer.mozu.com/tools" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-code-fork"></i></button></a><a href="http://www.mozu.com/contact"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-comments-o"></i></button></a><a href="http://www.mozu.com/legal"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-copyright"></i></button></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Required for Scrollspy/Affix/Bootstrap -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js">
+        </script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/scrollspy.js">
+        </script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/affix.js">
+        </script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js">
+        </script>
+        <script src="../Resources/Javascript/affix-dynamic.js">
+        </script>
+        <!-- Scrollspy active link script -->
+        <script>/* <![CDATA[ */
+
+			$( document ).ready(function() {
+			$('body').scrollspy({
+			target: '.bs-docs-sidebar',
+			offset: 20
+			});
+			}); 
+		
+		/* ]]> */</script>
+        <!-- Affix for sidebar -->
+        <!-- Toggler Script for expand/collapse sidebar -->
+        <script>/* <![CDATA[ */
+		$(document).ready(function(){
+
+		$("#toggler").click(function(){
+		$(this).toggleClass('active, inactive');
+			})
+		})
+		/* ]]> */</script>
+    </body>
+</html>

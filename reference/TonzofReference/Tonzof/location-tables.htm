@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html data-mc-runtime-file-type="Topic" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <!-- Dev Center Masterpage - multiple page sidebar, topic via proxy, footer across all -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Mozu" />
+        <meta name="description" content="Dev Center online help documentation." />
+        <meta name="keywords" content="Mozu, Dev Center, developer, help" />
+        <link rel="shortcut icon" href="http://developer.mozu.com/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" /><title>
+		Mozu.Location.Contracts.Coordinates
+	</title>
+        <!-- Mozu CSS -->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries. Again, you should technically remove "http:"; however, doing so increases Flare's build time on the oder of HOURS. -->
+        <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+		<![endif]-->
+        <!-- Insert Google Analytics Here -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/mozu-bootswatch-api.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="main">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button><a class="navbar-brand" href="index.htm"> <img src="../Resources/MasterPages/BootstrapSource/icon_mozu_red_m.png" style="margin-top: -9px;" /></a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                    <div class="navbar-collapse collapse">
+                        <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li value="1"><a href="http://developer.mozu.com/">Dev Center</a>
+                            </li>
+                            <li value="2"><a href="http://developer.mozu.com/api">Mozu API</a>
+                            </li>
+                            <li value="3"><a href="http://developer.mozu.com/learn">Mozu Learn</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!-- <div class="divide-nav" role="navigation">
+                <div class="container"> <MadCap:breadcrumbsProxy /> </div>
+            </div> -->
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3" style="margin-top: 60px;">
+                        <nav class="bs-docs-sidebar">
+                            <!--Side Bar Multipage -->
+                            <ul class="nav nav-stacked">
+                                <div class="side-heading">List of Mozu Tables</div>
+                                <li value="2"><a href="adminuser-tables.htm">AdminUser Tables</a>
+                                </li>
+                                <li value="3"><a href="appdev-tables.htm">AppDev Tables</a>
+                                </li>
+                                <li value="4"><a href="commerceruntime-tables.htm">CommerceRuntime Tables</a>
+                                </li>
+                                <li value="5"><a href="content-tables.htm">Content Tables</a>
+                                </li>
+                                <li value="6"><a href="core-api-tables.htm">Core API Tables</a>
+                                </li>
+                                <li value="7"><a href="extensible-tables.htm">Core Extensible Tables</a>
+                                </li>
+                                <li value="8"><a href="thirdparty-tables.htm">Core ThirdParty Tables</a>
+                                </li>
+                                <li value="9"><a href="customer-tables.htm">Customer Tables</a>
+                                </li>
+                                <li value="10"><a href="event-tables.htm">Event Tables</a>
+                                </li>
+                                <li value="11"><a href="installedapps-tables.htm">InstalledApplications Tables</a>
+                                </li>
+                                <li value="12"><a href="#">Location Tables</a>
+                                </li>
+                                <li value="13"><a href="paymentsvc-tables.htm">PaymentService Tables</a>
+                                </li>
+                                <li value="14"><a href="pricingruntime-tables.htm">PricingRuntime Tables</a>
+                                </li>
+                                <li value="15"><a href="productadmin-tables.htm">ProductAdmin Tables</a>
+                                </li>
+                                <li value="16"><a href="productruntime-tables.htm">ProductRuntime Tables</a>
+                                </li>
+                                <li value="17"><a href="reference-tables.htm">Reference Tables</a>
+                                </li>
+                                <li value="18"><a href="shippingruntime-tables.htm">ShippingRuntime Tables</a>
+                                </li>
+                                <li value="19"><a href="sitesettings-general-tables.htm">SiteSettings General Tables</a>
+                                </li>
+                                <li value="20"><a href="sitesettings-order-tables.htm">SiteSettings Order Tables</a>
+                                </li>
+                                <li value="21"><a href="sitesettings-shipping-tables.htm">SiteSettings Shipping Tables</a>
+                                </li>
+                                <li value="22"><a href="../../Tonzof/tenants-tables.htm">Tenants Shipping Tables</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-9 content">
+                        <!-- Flare topic compiler -->
+                        <h1 class="table-title">
+		Mozu.Location.Contracts.Coordinates
+	</h1>
+                        <p>
+		Properties of the geographical coordinates associated with a specific location.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>lat</td>
+                                    <td>No</td>
+                                    <td>The latitude coordinate of the location.</td>
+                                    <td>double</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>lng</td>
+                                    <td>No</td>
+                                    <td>The longitude coordinate of the location.</td>
+                                    <td>double</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Location.Contracts.FulfillmentType
+	</h1>
+                        <p>
+		Properties of a method used to fulfill items for an order. Fulfillment types are system-supplied, and include direct ship (DS) or in-store pickup (SP) at this time.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>code</td>
+                                    <td>No</td>
+                                    <td>The system-supplied code that identifies the fulfillment type, which is "DS" for direct ship or "SP" for in-store pickup.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>The system-supplied name of the fulfillment type, which is "Direct Ship" or "In Store Pickup".</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Location.Contracts.Hours
+	</h1>
+                        <p>
+		Container for the label that describes the range of operating hours for a location.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>label</td>
+                                    <td>No</td>
+                                    <td>Label that describes the range of operating hours for a location. For example - {"Label": "10:00 AM - 6:00 PM"}</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Location.Contracts.Location
+	</h1>
+                        <p>
+		Properties of a physical location a tenant uses to manage inventory and fulfills orders, provide store finder functionality, or both.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>address</td>
+                                    <td>No</td>
+                                    <td>The physical address properties of the location.</td>
+                                    <td>Address</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>auditInfo</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Basic audit info about the item.</p>
+                                    </td>
+                                    <td>AuditInfo</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>code</td>
+                                    <td>No</td>
+                                    <td>User-defined code to assign to this location.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>description</td>
+                                    <td>No</td>
+                                    <td>User-defined description of this location.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>fax</td>
+                                    <td>No</td>
+                                    <td>The fax number associated with this location.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>fulfillmentTypes</td>
+                                    <td>No</td>
+                                    <td>List of order fulfillment types associated with this location. The location can have fulfillment types of direct ship (DS), in-store pickup (SP), or both.</td>
+                                    <td>FulfillmentType</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>geo</td>
+                                    <td>No</td>
+                                    <td>The geographical coordinates associated with this location.</td>
+                                    <td>Coordinates</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>locationTypes</td>
+                                    <td>No</td>
+                                    <td>List of location types associated with this location. You can associate individual locations with any number of location types.</td>
+                                    <td>LocationType</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>The user-defined name of the location.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>note</td>
+                                    <td>No</td>
+                                    <td>Any tenant-defined notes associated with this location.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>phone</td>
+                                    <td>No</td>
+                                    <td>The phone number associated with this location.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>regularHours</td>
+                                    <td>No</td>
+                                    <td>List of standard operating hours for each day of the week this location is open for shopper business.</td>
+                                    <td>RegularHours</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>shippingOriginContact</td>
+                                    <td>No</td>
+                                    <td>Properties of a fulfillment contact for the shipping origin address associated with a location.</td>
+                                    <td>ShippingOriginContact</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>supportsInventory</td>
+                                    <td>No</td>
+                                    <td>If true, this location maintains its own product inventory. If the location uses the direct ship fulfillment type, it must also support inventory.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>tags</td>
+                                    <td>No</td>
+                                    <td>List of tenant-defined tags associated with this location.</td>
+                                    <td>string</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Location.Contracts.LocationCollection
+	</h1>
+                        <p>
+		A list of physical locations defined for a tenant.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Collection of locations returned.</p>
+                                    </td>
+                                    <td>Location</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>Sets the maximum amount of locations  to return.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>         Sets the amount of locations  per page.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>Sets the page to start for the paged retrieved JSON.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>Calculates the total amount of items returned in the collection.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Location.Contracts.LocationType
+	</h1>
+                        <p>
+		Properties of a type of physical location, such as warehouse or kiosk. Location types enable tenants to group similar locations for filtering and location usage type definition.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>auditInfo</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Basic audit info about the item.</p>
+                                    </td>
+                                    <td>AuditInfo</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>code</td>
+                                    <td>No</td>
+                                    <td>User-defined identifying code for the location type.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>The name of the location type.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Location.Contracts.LocationUsage
+	</h1>
+                        <p>
+		Configuration properties of a location usage type for a specified site. The direct ship location usage type consists of a single location that represents location that supports direct ship (DS) fulfillment. The in-store pickup location usage type consists of a list of location types that represent locations that support in-store pickup (SP) fulfillment. The store finder location usage type consists of a list of location codes, location types, or both.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>auditInfo</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Basic audit info about the item.</p>
+                                    </td>
+                                    <td>AuditInfo</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>locationCodes</td>
+                                    <td>No</td>
+                                    <td>List of location codes to associate with the location usage. At this time, you can only specify one location code in the request for the direct ship location usage type.</td>
+                                    <td>string</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>locationTypeCodes</td>
+                                    <td>No</td>
+                                    <td>List of location type codes associated with the location usage. The location service identifies the locations of the designated type. The in-store pickup (SP) and store finder (storeFinder) location usage types allow specification or multiple location type codes.</td>
+                                    <td>string</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>locationUsageTypeCode</td>
+                                    <td>No</td>
+                                    <td>The system-defined code used to identify the location usage type, which is "DS" for direct ship, "SP" for in-store pickup, or "storeFinder".</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Location.Contracts.LocationUsageCollection
+	</h1>
+                        <p>
+		Properties of the location usage for direct ship, in-store pickup, or the store finder.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Collection of location usages returned.</p>
+                                    </td>
+                                    <td>LocationUsage</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Calculates the total amount of items returned in the collection.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Location.Contracts.RegularHours
+	</h1>
+                        <p>
+		Array list of standard operating hours for each day of the week this location is open for shopper business.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>friday</td>
+                                    <td>No</td>
+                                    <td>The Friday label array describes the range of hours this location is normally open on Fridays. For example: {"Label": "10:00 AM - 6:00 PM"}.</td>
+                                    <td>Hours</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>monday</td>
+                                    <td>No</td>
+                                    <td>The Monday label array describes the range of hours this location is normally open on Mondays. For example: {"Label": "10:00 AM - 6:00 PM"}.</td>
+                                    <td>Hours</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>saturday</td>
+                                    <td>No</td>
+                                    <td>The Saturday label array describes the range of hours this location is normally open on Saturdays. For example: {"Label": "10:00 AM - 6:00 PM"}.</td>
+                                    <td>Hours</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>sunday</td>
+                                    <td>No</td>
+                                    <td>The Sunday label array describes the range of hours this location is normally open on Sundays. For example: {"Label": "10:00 AM - 6:00 PM"}.</td>
+                                    <td>Hours</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>thursday</td>
+                                    <td>No</td>
+                                    <td>The Thursday label array describes the range of hours this location is normally open on Thursdays. For example: {"Label": "10:00 AM - 6:00 PM"}.</td>
+                                    <td>Hours</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>tuesday</td>
+                                    <td>No</td>
+                                    <td>The Tuesday label array describes the range of hours this location is normally open on Tuesdays. For example: {"Label": "10:00 AM - 6:00 PM"}.</td>
+                                    <td>Hours</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>wednesday</td>
+                                    <td>No</td>
+                                    <td>The Wednesday label array describes the range of hours this location is normally open on Wednesdays. For example: {"Label": "10:00 AM - 6:00 PM"}.</td>
+                                    <td>Hours</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Location.Contracts.ShippingOriginContact
+	</h1>
+                        <p>
+		Properties of a fulfillment contact for the shipping origin address associated with a location.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>companyOrOrganization</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The company or organization name for the shipping origin contact.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>email</td>
+                                    <td>No</td>
+                                    <td>The email address for the shipping origin contact.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>firstName</td>
+                                    <td>No</td>
+                                    <td>The first name of the shipping origin contact.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>lastNameOrSurname</td>
+                                    <td>No</td>
+                                    <td>The last name of the shipping origin contact.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>middleNameOrInitial</td>
+                                    <td>No</td>
+                                    <td>The middle name or middle initial of the shipping origin contact.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>phoneNumber</td>
+                                    <td>No</td>
+                                    <td>Collection of phone numbers associated with the shipping origin contact.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mozu Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer__logo"><a href="http://www.mozu.com" target="_blank"><img src="http://www.mozu.com/sites/all/themes/mozu_aurora/logo.png" style="padding-top: 7px;" /></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                    </div>
+                    <div class="col-md-3">
+                        <p class="pull-right footer__icons"><a href="https://twitter.com/MozuCommerce"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-twitter"></i></button></a><a href="http://developer.mozu.com/tools" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-code-fork"></i></button></a><a href="http://www.mozu.com/contact"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-comments-o"></i></button></a><a href="http://www.mozu.com/legal"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-copyright"></i></button></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Required for Scrollspy/Affix/Bootstrap -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js">
+        </script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/scrollspy.js">
+        </script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/affix.js">
+        </script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js">
+        </script>
+        <script src="../Resources/Javascript/affix-dynamic.js">
+        </script>
+        <!-- Scrollspy active link script -->
+        <script>/* <![CDATA[ */
+
+			$( document ).ready(function() {
+			$('body').scrollspy({
+			target: '.bs-docs-sidebar',
+			offset: 20
+			});
+			}); 
+		
+		/* ]]> */</script>
+        <!-- Affix for sidebar -->
+        <!-- Toggler Script for expand/collapse sidebar -->
+        <script>/* <![CDATA[ */
+		$(document).ready(function(){
+
+		$("#toggler").click(function(){
+		$(this).toggleClass('active, inactive');
+			})
+		})
+		/* ]]> */</script>
+    </body>
+</html>

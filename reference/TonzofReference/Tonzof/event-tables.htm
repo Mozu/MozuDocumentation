@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html data-mc-runtime-file-type="Topic" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <!-- Dev Center Masterpage - multiple page sidebar, topic via proxy, footer across all -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Mozu" />
+        <meta name="description" content="Dev Center online help documentation." />
+        <meta name="keywords" content="Mozu, Dev Center, developer, help" />
+        <link rel="shortcut icon" href="http://developer.mozu.com/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" /><title>
+		Mozu.Event.Contracts.Event
+	</title>
+        <!-- Mozu CSS -->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries. Again, you should technically remove "http:"; however, doing so increases Flare's build time on the oder of HOURS. -->
+        <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+		<![endif]-->
+        <!-- Insert Google Analytics Here -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/mozu-bootswatch-api.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div id="main">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button><a class="navbar-brand" href="index.htm"> <img src="../Resources/MasterPages/BootstrapSource/icon_mozu_red_m.png" style="margin-top: -9px;" /></a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                    <div class="navbar-collapse collapse">
+                        <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li value="1"><a href="http://developer.mozu.com/">Dev Center</a>
+                            </li>
+                            <li value="2"><a href="http://developer.mozu.com/api">Mozu API</a>
+                            </li>
+                            <li value="3"><a href="http://developer.mozu.com/learn">Mozu Learn</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!-- <div class="divide-nav" role="navigation">
+                <div class="container"> <MadCap:breadcrumbsProxy /> </div>
+            </div> -->
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3" style="margin-top: 60px;">
+                        <nav class="bs-docs-sidebar">
+                            <!--Side Bar Multipage -->
+                            <ul class="nav nav-stacked">
+                                <div class="side-heading">List of Mozu Tables</div>
+                                <li value="2"><a href="adminuser-tables.htm">AdminUser Tables</a>
+                                </li>
+                                <li value="3"><a href="appdev-tables.htm">AppDev Tables</a>
+                                </li>
+                                <li value="4"><a href="commerceruntime-tables.htm">CommerceRuntime Tables</a>
+                                </li>
+                                <li value="5"><a href="content-tables.htm">Content Tables</a>
+                                </li>
+                                <li value="6"><a href="core-api-tables.htm">Core API Tables</a>
+                                </li>
+                                <li value="7"><a href="extensible-tables.htm">Core Extensible Tables</a>
+                                </li>
+                                <li value="8"><a href="thirdparty-tables.htm">Core ThirdParty Tables</a>
+                                </li>
+                                <li value="9"><a href="customer-tables.htm">Customer Tables</a>
+                                </li>
+                                <li value="10"><a href="#">Event Tables</a>
+                                </li>
+                                <li value="11"><a href="installedapps-tables.htm">InstalledApplications Tables</a>
+                                </li>
+                                <li value="12"><a href="location-tables.htm">Location Tables</a>
+                                </li>
+                                <li value="13"><a href="paymentsvc-tables.htm">PaymentService Tables</a>
+                                </li>
+                                <li value="14"><a href="pricingruntime-tables.htm">PricingRuntime Tables</a>
+                                </li>
+                                <li value="15"><a href="productadmin-tables.htm">ProductAdmin Tables</a>
+                                </li>
+                                <li value="16"><a href="productruntime-tables.htm">ProductRuntime Tables</a>
+                                </li>
+                                <li value="17"><a href="reference-tables.htm">Reference Tables</a>
+                                </li>
+                                <li value="18"><a href="shippingruntime-tables.htm">ShippingRuntime Tables</a>
+                                </li>
+                                <li value="19"><a href="sitesettings-general-tables.htm">SiteSettings General Tables</a>
+                                </li>
+                                <li value="20"><a href="sitesettings-order-tables.htm">SiteSettings Order Tables</a>
+                                </li>
+                                <li value="21"><a href="sitesettings-shipping-tables.htm">SiteSettings Shipping Tables</a>
+                                </li>
+                                <li value="22"><a href="../../Tonzof/tenants-tables.htm">Tenants Shipping Tables</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-9 content">
+                        <!-- Flare topic compiler -->
+                        <h1 class="table-title">
+		Mozu.Event.Contracts.Event
+	</h1>
+                        <p>
+		Properties of an event the system creates each time a create, read, update, or delete operation is performed.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>auditInfo</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Basic audit info about the item.</p>
+                                    </td>
+                                    <td>AuditInfo</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>catalogId</td>
+                                    <td>Yes</td>
+                                    <td>The unique identifier of the catalog associated with the event.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>correlationId</td>
+                                    <td>No</td>
+                                    <td>The unique identifier of the API request associated with the event action, which might contain multiple actions.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>entityId</td>
+                                    <td>No</td>
+                                    <td>The unique identifier of the entity that caused the event. For example, if the event is "product.created", the entity ID value represents the product code of the product that was created.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>No</td>
+                                    <td>The unique identifier of the event.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isTest</td>
+                                    <td>Yes</td>
+                                    <td>If true, the event record was generated as a test request for an application.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>masterCatalogId</td>
+                                    <td>Yes</td>
+                                    <td>
+                                        <p>The unique identifier of the master catalog associated with the event.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>siteId</td>
+                                    <td>Yes</td>
+                                    <td>
+                                        <p>The unique identifier of the site associated with the event.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>tenantId</td>
+                                    <td>Yes</td>
+                                    <td>
+                                        <p>The unique identifier of the tenant associated with the event.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>topic</td>
+                                    <td>No</td>
+                                    <td>The type of event that was performed, such as "product.created" or "category.deleted".</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Event.Contracts.EventCollection
+	</h1>
+                        <p>
+		The paged collection of events.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Collection of events returned.</p>
+                                    </td>
+                                    <td>Event</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>Sets the maximum amount of events to return.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>         Sets the amount of events per page.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>Sets the page to start for the paged retrieved JSON.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>Calculates the total amount of events returned in the collection.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Event.Contracts.EventDeliveryAction
+	</h1>
+                        <p>
+		This is the event delivery action.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>actionName</td>
+                                    <td>No</td>
+                                    <td>The name of the action to perform.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Event.Contracts.EventDeliveryAttempt
+	</h1>
+                        <p>
+                        </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>deliveryStatus</td>
+                                    <td>No</td>
+                                    <td> Status of the delivery process; System-supplied and read-only.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>errorType</td>
+                                    <td>No</td>
+                                    <td>Type of error that occurred, if the delivery was unsuccessful.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>executionDate</td>
+                                    <td>Yes</td>
+                                    <td>The date that the delivery was attempted.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>httpStatus</td>
+                                    <td>No</td>
+                                    <td>The HTTP Status (code and name) returned by the remote endpoint.</td>
+                                    <td>HttpStatus</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>message</td>
+                                    <td>No</td>
+                                    <td>HTTP message returned by the remote endpoint.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Event.Contracts.EventDeliverySummary
+	</h1>
+                        <p>
+                        </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>createDate</td>
+                                    <td>Yes</td>
+                                    <td>The date of the delivery.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>deliveryAttempts</td>
+                                    <td>No</td>
+                                    <td>Details about each attempted delivery of the event to the endpoint.</td>
+                                    <td>EventDeliveryAttempt</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>deliveryStatus</td>
+                                    <td>No</td>
+                                    <td>Status of the delivery process</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>eventSummary</td>
+                                    <td>No</td>
+                                    <td>Summary of the delivery.</td>
+                                    <td>EventSummary</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>Yes</td>
+                                    <td>The unique identifer for an event delivery summary.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isRunning</td>
+                                    <td>No</td>
+                                    <td>Indicates whether delivery of the event is currently being attempted at this moment in time.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>lastExecutionDate</td>
+                                    <td>No</td>
+                                    <td>The date that the delivery was last attempted (either successfully or not).</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>nextExecutionDate</td>
+                                    <td>No</td>
+                                    <td>The date that the delivery will next be attempted, if the event has not been successfully delivered yet and there are still retries remaining.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>retriesRemaining</td>
+                                    <td>Yes</td>
+                                    <td>Number of delivery attempts remaining</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>updateDate</td>
+                                    <td>Yes</td>
+                                    <td>The updated delivery date.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Event.Contracts.EventDeliverySummaryCollection
+	</h1>
+                        <p>
+                        </p>
+                        <table class="table table-hover">
+                            <col />
+                            <col />
+                            <col style="width: 485px;" />
+                            <col />
+                            <col />
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Collection of event delivery summaries</p>
+                                    </td>
+                                    <td>EventDeliverySummary</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>Sets the maximum amount of event delivery summaries to return.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>         Sets the amount of event delivery summaries per page.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>Sets the page to start for the paged retrieved JSON.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>Calculates the total amount of items returned in the collection.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Event.Contracts.EventNotification
+	</h1>
+                        <p>
+		A message that lets the system know an event has happened. This can either be a push or a pull.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>correlationId</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The unique identifier of the API request associated with the event action, which might contain multiple actions.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>entityId</td>
+                                    <td>No</td>
+                                    <td>Unique identifier of the entity.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>eventId</td>
+                                    <td>No</td>
+                                    <td>The data type of an event identifier.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isTest</td>
+                                    <td>Yes</td>
+                                    <td>If true, the is a test entity.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>timestamp</td>
+                                    <td>No</td>
+                                    <td>The date the event occurred.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>topic</td>
+                                    <td>No</td>
+                                    <td>The type of event that was performed, such as "product.created" or "category.deleted".</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Event.Contracts.EventSummary
+	</h1>
+                        <p>
+                        </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>catalogId</td>
+                                    <td>Yes</td>
+                                    <td>
+                                        <p>The unique identifier of the catalog associated with the event.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>correlationId</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The unique identifier of the API request associated with the event action, which might contain multiple actions.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>createDate</td>
+                                    <td>Yes</td>
+                                    <td>
+                                        <p>Date and time when the entity was created, represented in UTC Date/Time.</p>
+                                    </td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>entityId</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Unique identifier of the entity.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>eventId</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The data type of an event identifier.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>masterCatalogId</td>
+                                    <td>Yes</td>
+                                    <td>
+                                        <p>The unique identifier of the master catalog associated with the event.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>siteId</td>
+                                    <td>Yes</td>
+                                    <td>
+                                        <p>The unique identifier of the site associated with the event.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>tenantId</td>
+                                    <td>Yes</td>
+                                    <td>
+                                        <p>The unique identifier of the tenant associated with the event.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>topic</td>
+                                    <td>No</td>
+                                    <td>The topic of the event (i.e. product.created).</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Event.Contracts.HttpStatus
+	</h1>
+                        <p>
+                        </p>
+                        <table class="table table-hover">
+                            <col />
+                            <col />
+                            <col style="width: 132px;" />
+                            <col />
+                            <col />
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>code</td>
+                                    <td>No</td>
+                                    <td>The higher-level integer based HTTP Status Code returned by the remote endpoint.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>No</td>
+                                    <td>Friendly text of the HTTP Status Code returned by the remote endpoint.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Event.Contracts.SubscribingSite
+	</h1>
+                        <p>
+                        </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>auditInfo</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Basic audit info about the item.</p>
+                                    </td>
+                                    <td>AuditInfo</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isActive</td>
+                                    <td>Yes</td>
+                                    <td>This specifies if the subscription is active at the site level.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>siteId</td>
+                                    <td>Yes</td>
+                                    <td>
+                                        <p>Unique identifier of the site.</p>
+                                    </td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Event.Contracts.SubscribingSiteCollection
+	</h1>
+                        <p>
+                        </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Collection of subscribing sites returned.</p>
+                                    </td>
+                                    <td>SubscribingSite</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>Sets the maximum amount of subscribing sites to return.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>         Sets the amount of subscribing sites per page.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>Sets the page to start for the paged retrieved JSON.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>Calculates the total amount of items returned in the collection.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Event.Contracts.SubscribingTenant
+	</h1>
+                        <p>
+		This specifies if a tenant is associated with a subscription.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>auditInfo</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Basic audit info about the item.</p>
+                                    </td>
+                                    <td>AuditInfo</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isActive</td>
+                                    <td>Yes</td>
+                                    <td>This specifies if the subscription is active at the tenant level. If the subscription context is at the tenant level, this property is used over the site level.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>subscribingContextLevelType</td>
+                                    <td>No</td>
+                                    <td>This specifies the type of subscribing context, which is derived from the state of the subscription. If any subscribing sites exist; for example, a subscription that is not at the tenant level, then the value will be 'site'.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>subscribingSites</td>
+                                    <td>No</td>
+                                    <td>This specifies the subscribing sites.</td>
+                                    <td>SubscribingSite</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>tenantId</td>
+                                    <td>Yes</td>
+                                    <td>This specifies the tenant identifier.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Event.Contracts.SubscribingTenantCollection
+	</h1>
+                        <p>
+		This specifies the collection of subscribing tenants.
+	</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Collection of subscribing tenants returned.</p>
+                                    </td>
+                                    <td>SubscribingTenant</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>Sets the maximum amount of subscribing tenants to return.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>         Sets the amount of subscribing tenants per page.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>Sets the page to start for the paged retrieved JSON.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>Calculates the total amount of items returned in the collection.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Event.Contracts.Subscription
+	</h1>
+                        <p>
+                        </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>apiVersion</td>
+                                    <td>No</td>
+                                    <td>The API&#160;version for the subscription.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>appId</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>The application identifer for a subscription.</p>
+                                    </td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>confirmed</td>
+                                    <td>Yes</td>
+                                    <td>A Boolean value that indicates if the subscription endpoint has been confirmed.</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>contentType</td>
+                                    <td>No</td>
+                                    <td>		Content type of the payload that will be delivered.  This is utilized in combination with the notification delivery type.  Example:  A HTTP Post (notification delivery type) is performed with a JSON representation of the event data (content type).
+</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>createBy</td>
+                                    <td>No</td>
+                                    <td>Identifier of the user who created the entity. System-supplied and read-only.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>createDate</td>
+                                    <td>Yes</td>
+                                    <td>When the entity was created. System-supplied and read-only.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>endpoint</td>
+                                    <td>No</td>
+                                    <td>		The delivery endpoint that will receive notifications when events concerning the specified topics on the subscription occur.  The format of the endpoint may differ depending on the notification type.  For example, the endpoint may be a URL in some cases and an email address in others if multiple notification types are available.
+</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>No</td>
+                                    <td>The unique identifer for a subscription.</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>isActive</td>
+                                    <td>Yes</td>
+                                    <td>		A boolean value that indicates if events should be delivered that resulted from an API call by the application.  If true, any events that occur as a result of a direct API call by the same application will not be delivered. This can prevent an endless loop in certain scenarios.
+</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>noCallback</td>
+                                    <td>Yes</td>
+                                    <td>		A Boolean value that indicates if events should be delivered that resulted from an API call by the application.  If true, any events that occur as a result of a direct API call by the same application will not be delivered. This can prevent an endless loop in certain scenarios.
+</td>
+                                    <td>bool</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>notificationDeliveryType</td>
+                                    <td>No</td>
+                                    <td>		Notification delivery type, which is a string representation of an enumeration of values.  Example: Http (this is case insensitive, so http may also be passed in).
+</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>subscribingTenants</td>
+                                    <td>No</td>
+                                    <td>This is a tenant that is associated with a subscription.</td>
+                                    <td>SubscribingTenant</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>topics</td>
+                                    <td>No</td>
+                                    <td>		A list of topics that the subscription relates to.
+</td>
+                                    <td>string</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>updateBy</td>
+                                    <td>No</td>
+                                    <td>		Identifier of the user who updated the entity. System-supplied and read-only.
+</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>updateDate</td>
+                                    <td>Yes</td>
+                                    <td>When the entity was updated. System-supplied and read-only.</td>
+                                    <td>DateTime</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Event.Contracts.SubscriptionCollection
+	</h1>
+                        <p>
+                        </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>No</td>
+                                    <td>
+                                        <p>Collection of subscriptions returned.</p>
+                                    </td>
+                                    <td>Subscription</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>pageCount</td>
+                                    <td>No</td>
+                                    <td>Sets the maximum amount of subscriptions  to return.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>pageSize</td>
+                                    <td>No</td>
+                                    <td>         Sets the amount of subscriptions  per page.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>startIndex</td>
+                                    <td>No</td>
+                                    <td>Sets the page to start for the paged retrieved JSON.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+                                    <td>No</td>
+                                    <td>Calculates the total amount of items returned in the collection.</td>
+                                    <td>int</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Event.Contracts.TokenReplacementRequest
+	</h1>
+                        <p>
+                        </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>template</td>
+                                    <td>No</td>
+                                    <td>        The template to replace values in.
+</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 class="table-title">
+		Mozu.Event.Contracts.TokenReplacementResponse
+	</h1>
+                        <p>
+                        </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Nullable</th>
+                                    <th>Description</th>
+                                    <th>Data Type</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>result</td>
+                                    <td>No</td>
+                                    <td>        The result of the token transformation.
+</td>
+                                    <td>string</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mozu Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer__logo"><a href="http://www.mozu.com" target="_blank"><img src="http://www.mozu.com/sites/all/themes/mozu_aurora/logo.png" style="padding-top: 7px;" /></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                    </div>
+                    <div class="col-md-3">
+                        <p class="pull-right footer__icons"><a href="https://twitter.com/MozuCommerce"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-twitter"></i></button></a><a href="http://developer.mozu.com/tools" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-code-fork"></i></button></a><a href="http://www.mozu.com/contact"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-comments-o"></i></button></a><a href="http://www.mozu.com/legal"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-copyright"></i></button></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Required for Scrollspy/Affix/Bootstrap -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js">
+        </script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/scrollspy.js">
+        </script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/affix.js">
+        </script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js">
+        </script>
+        <script src="../Resources/Javascript/affix-dynamic.js">
+        </script>
+        <!-- Scrollspy active link script -->
+        <script>/* <![CDATA[ */
+
+			$( document ).ready(function() {
+			$('body').scrollspy({
+			target: '.bs-docs-sidebar',
+			offset: 20
+			});
+			}); 
+		
+		/* ]]> */</script>
+        <!-- Affix for sidebar -->
+        <!-- Toggler Script for expand/collapse sidebar -->
+        <script>/* <![CDATA[ */
+		$(document).ready(function(){
+
+		$("#toggler").click(function(){
+		$(this).toggleClass('active, inactive');
+			})
+		})
+		/* ]]> */</script>
+    </body>
+</html>
