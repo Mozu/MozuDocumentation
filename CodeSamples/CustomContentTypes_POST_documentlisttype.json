@@ -1,0 +1,43 @@
+		{
+	            "defaultDocuments": null,
+	            "documentListTypeFQN": "staticPages@a633157",
+	            "documentTypeFQNs": [
+	                "staticPage@a633157"
+	            ],
+	            "enablePublishing": true,
+	           "scopeType": "site",
+	            "supportsPublishing": true,
+	            "usages": [
+	                "entityManager" , "siteBuilder"
+	            ],
+	            "views": [
+	                {
+	                    "fields": [
+	                        {
+	                            "name": "title",
+	                            "target": "properties.title"
+	                        },
+	                   ],
+	                    "isVisibleInStorefront": false,
+	                    "name": "dataEntyView" 
+	 
+	               },
+				  {
+	                    "fields": [
+	                        {
+	                            "name": "title",
+	                            "target": "properties.title"
+	                        },
+					   {
+	                            "name": "body",
+	                            "target": "properties.body"
+	                        }
+	 
+	                    ],
+	                    "isVisibleInStorefront": true,
+	                    "name": "defaultView", 
+	 
+	               }
+	 
+	            ]
+		}
