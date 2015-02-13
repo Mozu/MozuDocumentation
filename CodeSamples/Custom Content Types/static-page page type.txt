@@ -1,0 +1,15 @@
+		//Example of a page type for custom content.
+		//Add a page type to theme.json to enable documents as pages
+		
+		"pageTypes": [
+		    {
+		      "documentTypeFQN": "staticPage@a633157",
+		      "listFQN": "staticPages@a633157",
+		      "entityType": "webpage",
+		      "id": "static-page",
+		      "template": "static-page",
+		      "title": "StaticPage",
+		      "userCreatable": true
+		    }
+
+  ],
